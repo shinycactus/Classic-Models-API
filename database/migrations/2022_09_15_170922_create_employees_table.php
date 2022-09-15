@@ -15,8 +15,19 @@ return new class extends Migration
     {
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
+            $table->string('last_name', 50);
+            $table->string('first_name', 50);
+            $table->string('extension', 50);
+            $table->string('email', 100);
+            $table->unsignedBigInteger('office_id');
+            $table->integer('reports_to')->nullable()->default(null);
+            $table->string('job_title', 50);
             $table->timestamps();
+
+            $table->foreign('office_id')->references('id')->on('offices');
         });
+
+       
     }
 
     /**
