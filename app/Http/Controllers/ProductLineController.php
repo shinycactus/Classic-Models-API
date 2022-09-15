@@ -8,11 +8,7 @@ use App\Models\ProductLine;
 
 class ProductLineController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
     public function index()
     {
         return ProductLine::all();
@@ -39,15 +35,10 @@ class ProductLineController extends Controller
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\ProductLine  $productLine
-     * @return \Illuminate\Http\Response
-     */
+   
     public function show(ProductLine $productLine)
     {
-        return ProductLine::find($productLine);
+        return ProductLine::with('products')->find($productLine);
     }
 
     /**
