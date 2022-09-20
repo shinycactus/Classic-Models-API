@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreOfficeRequest;
-use App\Http\Requests\UpdateOfficeRequest;
-use App\Models\Office;
+use App\Http\Requests\StoreOrderDetailRequest;
+use App\Http\Requests\UpdateOrderDetailRequest;
+use App\Models\OrderDetail;
 
-class OfficeController extends Controller
+class OrderDetailController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class OfficeController extends Controller
      */
     public function index()
     {
-        return Office::all();
+        //
     }
 
     /**
@@ -31,10 +31,10 @@ class OfficeController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreOfficeRequest  $request
+     * @param  \App\Http\Requests\StoreOrderDetailRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreOfficeRequest $request)
+    public function store(StoreOrderDetailRequest $request)
     {
         //
     }
@@ -42,21 +42,21 @@ class OfficeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Office  $office
+     * @param  \App\Models\OrderDetail  $orderDetail
      * @return \Illuminate\Http\Response
      */
-    public function show(Office $office)
+    public function show(OrderDetail $orderDetail)
     {
-        return $office;
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Office  $office
+     * @param  \App\Models\OrderDetail  $orderDetail
      * @return \Illuminate\Http\Response
      */
-    public function edit(Office $office)
+    public function edit(OrderDetail $orderDetail)
     {
         //
     }
@@ -64,11 +64,11 @@ class OfficeController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateOfficeRequest  $request
-     * @param  \App\Models\Office  $office
+     * @param  \App\Http\Requests\UpdateOrderDetailRequest  $request
+     * @param  \App\Models\OrderDetail  $orderDetail
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateOfficeRequest $request, Office $office)
+    public function update(UpdateOrderDetailRequest $request, OrderDetail $orderDetail)
     {
         //
     }
@@ -76,10 +76,10 @@ class OfficeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Office  $office
+     * @param  \App\Models\OrderDetail  $orderDetail
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Office $office)
+    public function destroy(OrderDetail $orderDetail)
     {
         //
     }

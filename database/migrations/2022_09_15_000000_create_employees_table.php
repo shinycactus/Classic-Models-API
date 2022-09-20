@@ -20,11 +20,12 @@ return new class extends Migration
             $table->string('extension', 50);
             $table->string('email', 100);
             $table->unsignedBigInteger('office_id');
-            $table->integer('reports_to')->nullable()->default(null);
+            $table->unsignedBigInteger('reports_to')->nullable()->default(null);
             $table->string('job_title', 50);
             $table->timestamps();
 
             $table->foreign('office_id')->references('id')->on('offices');
+            $table->foreign('reports_to')->references('id')->on('employees');
         });
 
        

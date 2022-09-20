@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\OfficeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductLineController;
 use App\Models\ProductLine;
@@ -24,4 +26,12 @@ Route::get('/product-lines/{productLine}', [ProductLineController::class, 'show'
 // Products
 Route::get('/products', [ProductController::class, 'index']);
 Route::get('/products/{product}', [ProductController::class, 'show']);
+
+// Offices
+Route::get('/offices', [OfficeController::class, 'index']);
+Route::get('/offices/{office}', [OfficeController::class, 'show']);
+
+// Employees
+Route::get('/employees', [EmployeeController::class, 'index']);
+Route::get('/employees/{employee}', [EmployeeController::class, 'show']);
 

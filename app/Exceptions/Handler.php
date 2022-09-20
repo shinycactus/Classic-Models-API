@@ -5,9 +5,12 @@ namespace App\Exceptions;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use App\Traits\ResponseTrait;
 
 class Handler extends ExceptionHandler
 {
+    use ResponseTrait; 
+
     /**
      * A list of exception types with their corresponding custom log levels.
      *
@@ -50,7 +53,7 @@ class Handler extends ExceptionHandler
 
         $this->renderable(function (NotFoundHttpException $e, $request) {
             if($request->wantsJson()) {
-                return response()->json(['message' => 'Item not found'], 404);
+                return $this->formatResponse(false, 'Not found');
             }
         });
     }

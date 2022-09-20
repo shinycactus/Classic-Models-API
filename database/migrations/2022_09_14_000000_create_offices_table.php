@@ -13,23 +13,19 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('customers', function (Blueprint $table) {
+        Schema::create('offices', function (Blueprint $table) {
             $table->id();
-            $table->string('customer_name', 50);
-            $table->string('contact_last_name', 50);
-            $table->string('contact_first_name', 50);
+            $table->string('city', 50);
             $table->string('phone', 50);
             $table->string('address_line_1', 50);
             $table->string('address_line_2', 50)->nullable()->default(null);
-            $table->string('city', 50);
             $table->string('state', 50)->nullable()->default(null);
-            $table->string('postal_code', 15)->nullable()->default(null);
-            $table->string('country', 15);
-            $table->string('sales_rep_employee_id', 15)->nullable()->default(null);
+            $table->string('country', 50);
+            $table->string('postal_code', 50);
+            $table->string('territory', 50);
             $table->timestamps();
 
-            // $table->foreign('sales_rep_employee_id')->references('id')->on('employees');
-
+            
         });
     }
 
@@ -40,6 +36,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('customers');
+        Schema::dropIfExists('offices');
     }
 };

@@ -17,18 +17,7 @@ class ProductSeeder extends Seeder
     {
         $products = [
             [
-                'product_code' => 'S10_1678',
-                'product_name' => '1969 Harley Davidson Ultimate Chopper',
-                'product_line_id' => 2,
-                'product_scale' => '1:10',
-                'product_vendor' => 'Min Lin Diecast',
-                'product_description' => 'This replica features working kickstand, front suspension, gear-shift lever, footbrake lever, drive chain, wheels and steering. All parts are particularly delicate due to their precise scale and require special care and attention.',
-                'quantity_in_stock' => 7933,
-                'buy_price' => '48.81',
-                'msrp' => '95.70'
-            ],
-            [
-                'prodict_code' => 'S10_1678', 
+                'id' => 'S10_1678', 
                 'product_name' => '1969 Harley Davidson Ultimate Chopper', 
                 'product_line_id' => 2, 
                 'product_scale' => '1:10', 
@@ -39,7 +28,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '95.70'
             ],
             [
-                'prodict_code' => 'S10_1949', 
+                'id' => 'S10_1949', 
                 'product_name' => '1952 Alpine Renault 1300', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:10', 
@@ -50,7 +39,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '214.30'
             ],
             [
-                'prodict_code' => 'S10_4698', 
+                'id' => 'S10_4698', 
                 'product_name' => '2003 Harley-Davidson Eagle Drag Bike', 
                 'product_line_id' => 2, 
                 'product_scale' => '1:10', 
@@ -61,7 +50,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '193.66'
             ],
             [
-                'prodict_code' => 'S10_4757', 
+                'id' => 'S10_4757', 
                 'product_name' => '1972 Alfa Romeo GTA', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:10', 
@@ -72,7 +61,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '136.00'
             ],
             [
-                'prodict_code' => 'S10_4962', 
+                'id' => 'S10_4962', 
                 'product_name' => '1962 LanciaA Delta 16V', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:10', 
@@ -83,7 +72,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '147.74'
             ],
             [
-                'prodict_code' => 'S12_1099', 
+                'id' => 'S12_1099', 
                 'product_name' => '1968 Ford Mustang', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:12', 
@@ -94,7 +83,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '194.57'
             ],
             [
-                'prodict_code' => 'S12_1108', 
+                'id' => 'S12_1108', 
                 'product_name' => '2001 Ferrari Enzo', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:12', 
@@ -105,7 +94,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '207.80'
             ],
             [
-                'prodict_code' => 'S12_1666', 
+                'id' => 'S12_1666', 
                 'product_name' => '1958 Setra Bus', 
                 'product_line_id' => 6, 
                 'product_scale' => '1:12', 
@@ -116,7 +105,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '136.67'
             ],
             [
-                'prodict_code' => 'S12_3148', 
+                'id' => 'S12_3148', 
                 'product_name' => '1969 Corvair Monza', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:18', 
@@ -127,7 +116,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '151.08'
             ],
             [
-                'prodict_code' => 'S12_3380', 
+                'id' => 'S12_3380', 
                 'product_name' => '1968 Dodge Charger', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:12', 
@@ -138,7 +127,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '117.44'
             ],
             [
-                'prodict_code' => 'S12_3891', 
+                'id' => 'S12_3891', 
                 'product_name' => '1969 Ford Falcon', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:12', 
@@ -149,7 +138,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '173.02'
             ],
             [
-                'prodict_code' => 'S12_3990', 
+                'id' => 'S12_3990', 
                 'product_name' => '1970 Plymouth Hemi Cuda', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:12', 
@@ -160,7 +149,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '79.80'
             ],
             [
-                'prodict_code' => 'S12_4473', 
+                'id' => 'S12_4473', 
                 'product_name' => '1957 Chevy Pickup', 
                 'product_line_id' => 6, 
                 'product_scale' => '1:12', 
@@ -171,7 +160,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '118.50'
             ],
             [
-                'prodict_code' => 'S12_4675', 
+                'id' => 'S12_4675', 
                 'product_name' => '1969 Dodge Charger', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:12', 
@@ -182,7 +171,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '115.16'
             ],
             [
-                'prodict_code' => 'S18_1097', 
+                'id' => 'S18_1097', 
                 'product_name' => '1940 Ford Pickup Truck', 
                 'product_line_id' => 6, 
                 'product_scale' => '1:18', 
@@ -193,7 +182,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '116.67'
             ],
             [
-                'prodict_code' => 'S18_1129', 
+                'id' => 'S18_1129', 
                 'product_name' => '1993 Mazda RX-7', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:18', 
@@ -204,7 +193,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '141.54'
             ],
             [
-                'prodict_code' => 'S18_1342', 
+                'id' => 'S18_1342', 
                 'product_name' => '1937 Lincoln Berline', 
                 'product_line_id' => 7, 
                 'product_scale' => '1:18', 
@@ -215,7 +204,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '102.74'
             ],
             [
-                'prodict_code' => 'S18_1367', 
+                'id' => 'S18_1367', 
                 'product_name' => '1936 Mercedes-Benz 500K Special Roadster', 
                 'product_line_id' => 7, 
                 'product_scale' => '1:18', 
@@ -226,7 +215,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '53.91'
             ],
             [
-                'prodict_code' => 'S18_1589', 
+                'id' => 'S18_1589', 
                 'product_name' => '1965 Aston Martin DB5', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:18', 
@@ -237,7 +226,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '124.44'
             ],
             [
-                'prodict_code' => 'S18_1662', 
+                'id' => 'S18_1662', 
                 'product_name' => '1980s Black Hawk Helicopter', 
                 'product_line_id' => 3, 
                 'product_scale' => '1:18', 
@@ -248,7 +237,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '157.69'
             ],
             [
-                'prodict_code' => 'S18_1749', 
+                'id' => 'S18_1749', 
                 'product_name' => '1917 Grand Touring Sedan', 
                 'product_line_id' => 7, 
                 'product_scale' => '1:18', 
@@ -259,7 +248,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '170.00'
             ],
             [
-                'prodict_code' => 'S18_1889', 
+                'id' => 'S18_1889', 
                 'product_name' => '1948 Porsche 356-A Roadster', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:18', 
@@ -270,7 +259,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '77.00'
             ],
             [
-                'prodict_code' => 'S18_1984', 
+                'id' => 'S18_1984', 
                 'product_name' => '1995 Honda Civic', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:18', 
@@ -281,7 +270,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '142.25'
             ],
             [
-                'prodict_code' => 'S18_2238', 
+                'id' => 'S18_2238', 
                 'product_name' => '1998 Chrysler Plymouth Prowler', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:18', 
@@ -292,7 +281,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '163.73'
             ],
             [
-                'prodict_code' => 'S18_2248', 
+                'id' => 'S18_2248', 
                 'product_name' => '1911 Ford Town Car', 
                 'product_line_id' => 7, 
                 'product_scale' => '1:18', 
@@ -303,7 +292,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '60.54'
             ],
             [
-                'prodict_code' => 'S18_2319', 
+                'id' => 'S18_2319', 
                 'product_name' => '1964 Mercedes Tour Bus', 
                 'product_line_id' => 6, 
                 'product_scale' => '1:18', 
@@ -314,7 +303,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '122.73'
             ],
             [
-                'prodict_code' => 'S18_2325', 
+                'id' => 'S18_2325', 
                 'product_name' => '1932 Model A Ford J-Coupe', 
                 'product_line_id' => 7, 
                 'product_scale' => '1:18', 
@@ -325,7 +314,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '127.13'
             ],
             [
-                'prodict_code' => 'S18_2432', 
+                'id' => 'S18_2432', 
                 'product_name' => '1926 Ford Fire Engine', 
                 'product_line_id' => 6, 
                 'product_scale' => '1:18', 
@@ -336,7 +325,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '60.77'
             ],
             [
-                'prodict_code' => 'S18_2581', 
+                'id' => 'S18_2581', 
                 'product_name' => 'P-51-D Mustang', 
                 'product_line_id' => 3, 
                 'product_scale' => '1:72', 
@@ -347,7 +336,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '84.48'
             ],
             [
-                'prodict_code' => 'S18_2625', 
+                'id' => 'S18_2625', 
                 'product_name' => '1936 Harley Davidson El Knucklehead', 
                 'product_line_id' => 2, 
                 'product_scale' => '1:18', 
@@ -358,7 +347,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '60.57'
             ],
             [
-                'prodict_code' => 'S18_2795', 
+                'id' => 'S18_2795', 
                 'product_name' => '1928 Mercedes-Benz SSK', 
                 'product_line_id' => 7, 
                 'product_scale' => '1:18', 
@@ -369,7 +358,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '168.75'
             ],
             [
-                'prodict_code' => 'S18_2870', 
+                'id' => 'S18_2870', 
                 'product_name' => '1999 Indy 500 Monte Carlo SS', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:18', 
@@ -380,7 +369,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '132.00'
             ],
             [
-                'prodict_code' => 'S18_2949', 
+                'id' => 'S18_2949', 
                 'product_name' => '1913 Ford Model T Speedster', 
                 'product_line_id' => 7, 
                 'product_scale' => '1:18', 
@@ -391,7 +380,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '101.31'
             ],
             [
-                'prodict_code' => 'S18_2957', 
+                'id' => 'S18_2957', 
                 'product_name' => '1934 Ford V8 Coupe', 
                 'product_line_id' => 7, 
                 'product_scale' => '1:18', 
@@ -402,7 +391,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '62.46'
             ],
             [
-                'prodict_code' => 'S18_3029', 
+                'id' => 'S18_3029', 
                 'product_name' => '1999 Yamaha Speed Boat', 
                 'product_line_id' => 4, 
                 'product_scale' => '1:18', 
@@ -413,7 +402,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '86.02'
             ],
             [
-                'prodict_code' => 'S18_3136', 
+                'id' => 'S18_3136', 
                 'product_name' => '18th Century Vintage Horse Carriage', 
                 'product_line_id' => 7, 
                 'product_scale' => '1:18', 
@@ -424,7 +413,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '104.72'
             ],
             [
-                'prodict_code' => 'S18_3140', 
+                'id' => 'S18_3140', 
                 'product_name' => '1903 Ford Model A', 
                 'product_line_id' => 7, 
                 'product_scale' => '1:18', 
@@ -435,7 +424,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '136.59'
             ],
             [
-                'prodict_code' => 'S18_3232', 
+                'id' => 'S18_3232', 
                 'product_name' => '1992 Ferrari 360 Spider red', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:18', 
@@ -446,7 +435,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '169.34'
             ],
             [
-                'prodict_code' => 'S18_3233', 
+                'id' => 'S18_3233', 
                 'product_name' => '1985 Toyota Supra', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:18', 
@@ -457,7 +446,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '107.57'
             ],
             [
-                'prodict_code' => 'S18_3259', 
+                'id' => 'S18_3259', 
                 'product_name' => 'Collectable Wooden Train', 
                 'product_line_id' => 5, 
                 'product_scale' => '1:18', 
@@ -468,7 +457,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '100.84'
             ],
             [
-                'prodict_code' => 'S18_3278', 
+                'id' => 'S18_3278', 
                 'product_name' => '1969 Dodge Super Bee', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:18', 
@@ -479,7 +468,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '80.41'
             ],
             [
-                'prodict_code' => 'S18_3320', 
+                'id' => 'S18_3320', 
                 'product_name' => '1917 Maxwell Touring Car', 
                 'product_line_id' => 7, 
                 'product_scale' => '1:18', 
@@ -490,7 +479,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '99.21'
             ],
             [
-                'prodict_code' => 'S18_3482', 
+                'id' => 'S18_3482', 
                 'product_name' => '1976 Ford Gran Torino', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:18', 
@@ -501,7 +490,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '146.99'
             ],
             [
-                'prodict_code' => 'S18_3685', 
+                'id' => 'S18_3685', 
                 'product_name' => '1948 Porsche Type 356 Roadster', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:18', 
@@ -512,7 +501,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '141.28'
             ],
             [
-                'prodict_code' => 'S18_3782', 
+                'id' => 'S18_3782', 
                 'product_name' => '1957 Vespa GS150', 
                 'product_line_id' => 2, 
                 'product_scale' => '1:18', 
@@ -523,7 +512,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '62.17'
             ],
             [
-                'prodict_code' => 'S18_3856', 
+                'id' => 'S18_3856', 
                 'product_name' => '1941 Chevrolet Special Deluxe Cabriolet', 
                 'product_line_id' => 7, 
                 'product_scale' => '1:18', 
@@ -534,7 +523,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '105.87'
             ],
             [
-                'prodict_code' => 'S18_4027', 
+                'id' => 'S18_4027', 
                 'product_name' => '1970 Triumph Spitfire', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:18', 
@@ -545,7 +534,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '143.62'
             ],
             [
-                'prodict_code' => 'S18_4409', 
+                'id' => 'S18_4409', 
                 'product_name' => '1932 Alfa Romeo 8C2300 Spider Sport', 
                 'product_line_id' => 7, 
                 'product_scale' => '1:18', 
@@ -556,7 +545,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '92.03'
             ],
             [
-                'prodict_code' => 'S18_4522', 
+                'id' => 'S18_4522', 
                 'product_name' => '1904 Buick Runabout', 
                 'product_line_id' => 7, 
                 'product_scale' => '1:18', 
@@ -567,7 +556,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '87.77'
             ],
             [
-                'prodict_code' => 'S18_4600', 
+                'id' => 'S18_4600', 
                 'product_name' => '1940s Ford truck', 
                 'product_line_id' => 6, 
                 'product_scale' => '1:18', 
@@ -578,7 +567,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '121.08'
             ],
             [
-                'prodict_code' => 'S18_4668', 
+                'id' => 'S18_4668', 
                 'product_name' => '1939 Cadillac Limousine', 
                 'product_line_id' => 7, 
                 'product_scale' => '1:18', 
@@ -589,7 +578,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '50.31'
             ],
             [
-                'prodict_code' => 'S18_4721', 
+                'id' => 'S18_4721', 
                 'product_name' => '1957 Corvette Convertible', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:18', 
@@ -600,7 +589,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '148.80'
             ],
             [
-                'prodict_code' => 'S18_4933', 
+                'id' => 'S18_4933', 
                 'product_name' => '1957 Ford Thunderbird', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:18', 
@@ -611,7 +600,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '71.27'
             ],
             [
-                'prodict_code' => 'S24_1046', 
+                'id' => 'S24_1046', 
                 'product_name' => '1970 Chevy Chevelle SS 454', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:24', 
@@ -622,7 +611,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '73.49'
             ],
             [
-                'prodict_code' => 'S24_1444', 
+                'id' => 'S24_1444', 
                 'product_name' => '1970 Dodge Coronet', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:24', 
@@ -633,7 +622,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '57.80'
             ],
             [
-                'prodict_code' => 'S24_1578', 
+                'id' => 'S24_1578', 
                 'product_name' => '1997 BMW R 1100 S', 
                 'product_line_id' => 2, 
                 'product_scale' => '1:24', 
@@ -644,7 +633,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '112.70'
             ],
             [
-                'prodict_code' => 'S24_1628', 
+                'id' => 'S24_1628', 
                 'product_name' => '1966 Shelby Cobra 427 S/C', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:24', 
@@ -655,7 +644,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '50.31'
             ],
             [
-                'prodict_code' => 'S24_1785', 
+                'id' => 'S24_1785', 
                 'product_name' => '1928 British Royal Navy Airplane', 
                 'product_line_id' => 3, 
                 'product_scale' => '1:24', 
@@ -666,7 +655,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '109.42'
             ],
             [
-                'prodict_code' => 'S24_1937', 
+                'id' => 'S24_1937', 
                 'product_name' => '1939 Chevrolet Deluxe Coupe', 
                 'product_line_id' => 7, 
                 'product_scale' => '1:24', 
@@ -677,7 +666,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '33.19'
             ],
             [
-                'prodict_code' => 'S24_2000', 
+                'id' => 'S24_2000', 
                 'product_name' => '1960 BSA Gold Star DBD34', 
                 'product_line_id' => 2, 
                 'product_scale' => '1:24', 
@@ -688,7 +677,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '76.17'
             ],
             [
-                'prodict_code' => 'S24_2011', 
+                'id' => 'S24_2011', 
                 'product_name' => '18th century schooner', 
                 'product_line_id' => 4, 
                 'product_scale' => '1:24', 
@@ -699,7 +688,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '122.89'
             ],
             [
-                'prodict_code' => 'S24_2022', 
+                'id' => 'S24_2022', 
                 'product_name' => '1938 Cadillac V-16 Presidential Limousine', 
                 'product_line_id' => 7, 
                 'product_scale' => '1:24', 
@@ -710,7 +699,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '44.80'
             ],
             [
-                'prodict_code' => 'S24_2300', 
+                'id' => 'S24_2300', 
                 'product_name' => '1962 Volkswagen Microbus', 
                 'product_line_id' => 6, 
                 'product_scale' => '1:24', 
@@ -721,7 +710,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '127.79'
             ],
             [
-                'prodict_code' => 'S24_2360', 
+                'id' => 'S24_2360', 
                 'product_name' => '1982 Ducati 900 Monster', 
                 'product_line_id' => 2, 
                 'product_scale' => '1:24', 
@@ -732,7 +721,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '69.26'
             ],
             [
-                'prodict_code' => 'S24_2766', 
+                'id' => 'S24_2766', 
                 'product_name' => '1949 Jaguar XK 120', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:24', 
@@ -743,7 +732,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '90.87'
             ],
             [
-                'prodict_code' => 'S24_2840', 
+                'id' => 'S24_2840', 
                 'product_name' => '1958 Chevy Corvette Limited Edition', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:24', 
@@ -754,7 +743,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '35.36'
             ],
             [
-                'prodict_code' => 'S24_2841', 
+                'id' => 'S24_2841', 
                 'product_name' => '1900s Vintage Bi-Plane', 
                 'product_line_id' => 3, 
                 'product_scale' => '1:24', 
@@ -765,7 +754,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '68.51'
             ],
             [
-                'prodict_code' => 'S24_2887', 
+                'id' => 'S24_2887', 
                 'product_name' => '1952 Citroen-15CV', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:24', 
@@ -776,7 +765,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '117.44'
             ],
             [
-                'prodict_code' => 'S24_2972', 
+                'id' => 'S24_2972', 
                 'product_name' => '1982 Lamborghini Diablo', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:24', 
@@ -787,7 +776,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '37.76'
             ],
             [
-                'prodict_code' => 'S24_3151', 
+                'id' => 'S24_3151', 
                 'product_name' => '1912 Ford Model T Delivery Wagon', 
                 'product_line_id' => 7, 
                 'product_scale' => '1:24', 
@@ -798,7 +787,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '88.51'
             ],
             [
-                'prodict_code' => 'S24_3191', 
+                'id' => 'S24_3191', 
                 'product_name' => '1969 Chevrolet Camaro Z28', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:24', 
@@ -809,7 +798,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '85.61'
             ],
             [
-                'prodict_code' => 'S24_3371', 
+                'id' => 'S24_3371', 
                 'product_name' => '1971 Alpine Renault 1600s', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:24', 
@@ -820,7 +809,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '61.23'
             ],
             [
-                'prodict_code' => 'S24_3420', 
+                'id' => 'S24_3420', 
                 'product_name' => '1937 Horch 930V Limousine', 
                 'product_line_id' => 7, 
                 'product_scale' => '1:24', 
@@ -831,7 +820,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '65.75'
             ],
             [
-                'prodict_code' => 'S24_3432', 
+                'id' => 'S24_3432', 
                 'product_name' => '2002 Chevy Corvette', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:24', 
@@ -842,7 +831,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '107.08'
             ],
             [
-                'prodict_code' => 'S24_3816', 
+                'id' => 'S24_3816', 
                 'product_name' => '1940 Ford Delivery Sedan', 
                 'product_line_id' => 7, 
                 'product_scale' => '1:24', 
@@ -853,7 +842,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '83.86'
             ],
             [
-                'prodict_code' => 'S24_3856', 
+                'id' => 'S24_3856', 
                 'product_name' => '1956 Porsche 356A Coupe', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:18', 
@@ -864,7 +853,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '140.43'
             ],
             [
-                'prodict_code' => 'S24_3949', 
+                'id' => 'S24_3949', 
                 'product_name' => 'Corsair F4U ( Bird Cage)', 
                 'product_line_id' => 3, 
                 'product_scale' => '1:24', 
@@ -875,7 +864,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '68.24'
             ],
             [
-                'prodict_code' => 'S24_3969', 
+                'id' => 'S24_3969', 
                 'product_name' => '1936 Mercedes Benz 500k Roadster', 
                 'product_line_id' => 7, 
                 'product_scale' => '1:24', 
@@ -886,7 +875,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '41.03'
             ],
             [
-                'prodict_code' => 'S24_4048', 
+                'id' => 'S24_4048', 
                 'product_name' => '1992 Porsche Cayenne Turbo Silver', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:24', 
@@ -897,7 +886,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '118.28'
             ],
             [
-                'prodict_code' => 'S24_4258', 
+                'id' => 'S24_4258', 
                 'product_name' => '1936 Chrysler Airflow', 
                 'product_line_id' => 7, 
                 'product_scale' => '1:24', 
@@ -908,7 +897,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '97.39'
             ],
             [
-                'prodict_code' => 'S24_4278', 
+                'id' => 'S24_4278', 
                 'product_name' => '1900s Vintage Tri-Plane', 
                 'product_line_id' => 3, 
                 'product_scale' => '1:24', 
@@ -919,7 +908,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '72.45'
             ],
             [
-                'prodict_code' => 'S24_4620', 
+                'id' => 'S24_4620', 
                 'product_name' => '1961 Chevrolet Impala', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:18', 
@@ -930,7 +919,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '80.84'
             ],
             [
-                'prodict_code' => 'S32_1268', 
+                'id' => 'S32_1268', 
                 'product_name' => '1980s GM Manhattan Express', 
                 'product_line_id' => 6, 
                 'product_scale' => '1:32', 
@@ -941,7 +930,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '96.31'
             ],
             [
-                'prodict_code' => 'S32_1374', 
+                'id' => 'S32_1374', 
                 'product_name' => '1997 BMW F650 ST', 
                 'product_line_id' => 2, 
                 'product_scale' => '1:32', 
@@ -952,7 +941,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '99.89'
             ],
             [
-                'prodict_code' => 'S32_2206', 
+                'id' => 'S32_2206', 
                 'product_name' => '1982 Ducati 996 R', 
                 'product_line_id' => 2, 
                 'product_scale' => '1:32', 
@@ -963,7 +952,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '40.23'
             ],
             [
-                'prodict_code' => 'S32_2509', 
+                'id' => 'S32_2509', 
                 'product_name' => '1954 Greyhound Scenicruiser', 
                 'product_line_id' => 6, 
                 'product_scale' => '1:32', 
@@ -974,7 +963,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '54.11'
             ],
             [
-                'prodict_code' => 'S32_3207', 
+                'id' => 'S32_3207', 
                 'product_name' => '1950s Chicago Surface Lines Streetcar', 
                 'product_line_id' => 5, 
                 'product_scale' => '1:32', 
@@ -985,7 +974,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '62.14'
             ],
             [
-                'prodict_code' => 'S32_3522', 
+                'id' => 'S32_3522', 
                 'product_name' => '1996 Peterbilt 379 Stake Bed with Outrigger', 
                 'product_line_id' => 6, 
                 'product_scale' => '1:32', 
@@ -996,7 +985,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '64.64'
             ],
             [
-                'prodict_code' => 'S32_4289', 
+                'id' => 'S32_4289', 
                 'product_name' => '1928 Ford Phaeton Deluxe', 
                 'product_line_id' => 7, 
                 'product_scale' => '1:32', 
@@ -1007,7 +996,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '68.79'
             ],
             [
-                'prodict_code' => 'S32_4485', 
+                'id' => 'S32_4485', 
                 'product_name' => '1974 Ducati 350 Mk3 Desmo', 
                 'product_line_id' => 2, 
                 'product_scale' => '1:32', 
@@ -1018,7 +1007,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '102.05'
             ],
             [
-                'prodict_code' => 'S50_1341', 
+                'id' => 'S50_1341', 
                 'product_name' => '1930 Buick Marquette Phaeton', 
                 'product_line_id' => 7, 
                 'product_scale' => '1:50', 
@@ -1029,7 +1018,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '43.64'
             ],
             [
-                'prodict_code' => 'S50_1392', 
+                'id' => 'S50_1392', 
                 'product_name' => 'Diamond T620 Semi-Skirted Tanker', 
                 'product_line_id' => 6, 
                 'product_scale' => '1:50', 
@@ -1040,7 +1029,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '115.75'
             ],
             [
-                'prodict_code' => 'S50_1514', 
+                'id' => 'S50_1514', 
                 'product_name' => '1962 City of Detroit Streetcar', 
                 'product_line_id' => 5, 
                 'product_scale' => '1:50', 
@@ -1051,7 +1040,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '58.58'
             ],
             [
-                'prodict_code' => 'S50_4713', 
+                'id' => 'S50_4713', 
                 'product_name' => '2002 Yamaha YZR M1', 
                 'product_line_id' => 2, 
                 'product_scale' => '1:50', 
@@ -1062,7 +1051,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '81.36'
             ],
             [
-                'prodict_code' => 'S700_1138', 
+                'id' => 'S700_1138', 
                 'product_name' => 'The Schooner Bluenose', 
                 'product_line_id' => 4, 
                 'product_scale' => '1:700', 
@@ -1073,7 +1062,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '66.67'
             ],
             [
-                'prodict_code' => 'S700_1691', 
+                'id' => 'S700_1691', 
                 'product_name' => 'American Airlines: B767-300', 
                 'product_line_id' => 3, 
                 'product_scale' => '1:700', 
@@ -1084,7 +1073,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '91.34'
             ],
             [
-                'prodict_code' => 'S700_1938', 
+                'id' => 'S700_1938', 
                 'product_name' => 'The Mayflower', 
                 'product_line_id' => 4, 
                 'product_scale' => '1:700', 
@@ -1095,7 +1084,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '86.61'
             ],
             [
-                'prodict_code' => 'S700_2047', 
+                'id' => 'S700_2047', 
                 'product_name' => 'HMS Bounty', 
                 'product_line_id' => 4, 
                 'product_scale' => '1:700', 
@@ -1106,7 +1095,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '90.52'
             ],
             [
-                'prodict_code' => 'S700_2466', 
+                'id' => 'S700_2466', 
                 'product_name' => 'America West Airlines B757-200', 
                 'product_line_id' => 3, 
                 'product_scale' => '1:700', 
@@ -1117,7 +1106,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '99.72'
             ],
             [
-                'prodict_code' => 'S700_2610', 
+                'id' => 'S700_2610', 
                 'product_name' => 'The USS Constitution Ship', 
                 'product_line_id' => 4, 
                 'product_scale' => '1:700', 
@@ -1128,7 +1117,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '72.28'
             ],
             [
-                'prodict_code' => 'S700_2824', 
+                'id' => 'S700_2824', 
                 'product_name' => '1982 Camaro Z28', 
                 'product_line_id' => 1, 
                 'product_scale' => '1:18', 
@@ -1139,7 +1128,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '101.15'
             ],
             [
-                'prodict_code' => 'S700_2834', 
+                'id' => 'S700_2834', 
                 'product_name' => 'ATA: B757-300', 
                 'product_line_id' => 3, 
                 'product_scale' => '1:700', 
@@ -1150,7 +1139,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '118.65'
             ],
             [
-                'prodict_code' => 'S700_3167', 
+                'id' => 'S700_3167', 
                 'product_name' => 'F/A 18 Hornet 1/72', 
                 'product_line_id' => 3, 
                 'product_scale' => '1:72', 
@@ -1161,7 +1150,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '80.00'
             ],
             [
-                'prodict_code' => 'S700_3505', 
+                'id' => 'S700_3505', 
                 'product_name' => 'The Titanic', 
                 'product_line_id' => 4, 
                 'product_scale' => '1:700', 
@@ -1172,7 +1161,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '100.17'
             ],
             [
-                'prodict_code' => 'S700_3962', 
+                'id' => 'S700_3962', 
                 'product_name' => 'The Queen Mary', 
                 'product_line_id' => 4, 
                 'product_scale' => '1:700', 
@@ -1183,7 +1172,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '99.31'
             ],
             [
-                'prodict_code' => 'S700_4002', 
+                'id' => 'S700_4002', 
                 'product_name' => 'American Airlines: MD-11S', 
                 'product_line_id' => 3, 
                 'product_scale' => '1:700', 
@@ -1194,7 +1183,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '74.03'
             ],
             [
-                'prodict_code' => 'S72_1253', 
+                'id' => 'S72_1253', 
                 'product_name' => 'Boeing X-32A JSF', 
                 'product_line_id' => 3, 
                 'product_scale' => '1:72', 
@@ -1205,7 +1194,7 @@ class ProductSeeder extends Seeder
                 'msrp' => '49.66'
             ],
             [
-                'prodict_code' => 'S72_3212', 
+                'id' => 'S72_3212', 
                 'product_name' => 'Pont Yacht', 
                 'product_line_id' => 4, 
                 'product_scale' => '1:72', 
