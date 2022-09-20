@@ -5,13 +5,24 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
 use App\Models\Product;
+use App\Traits\ResponseTrait;
+use Illuminate\Http\JsonResponse;
 
 class ProductController extends Controller
 {
-    
-    public function index()
+    use ResponseTrait;
+
+    /**
+     * @return JsonResponse
+     */
+    public function index(): JsonResponse
     {
-        return Product::all();
+        try {
+            $products['products'] = Product::all();
+            return $this->formatResponse(true, $products);
+        } catch (\Exception $e) {
+            return $this->formatResponse(false, $e->getMessage());
+        }
     }
 
     /**
@@ -24,17 +35,25 @@ class ProductController extends Controller
         //
     }
 
-  
+
     public function store(StoreProductRequest $request)
     {
         //
     }
 
-   
-    public function show(Product $product)
+
+    /**
+     * @param $id
+     * @return JsonResponse
+     */
+    public function show($id): JsonResponse
     {
-        $product->load('productLine');
-        return $product;
+        try {
+            $product['product'] = Product::with('productLine')->findOrFail($id);
+            return $this->formatResponse(true, $product);
+        } catch (\Exception $e) {
+            return $this->formatResponse(false, $e->getMessage());
+        }
     }
 
     /**

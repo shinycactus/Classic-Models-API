@@ -5,28 +5,26 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreOfficeRequest;
 use App\Http\Requests\UpdateOfficeRequest;
 use App\Models\Office;
+use App\Traits\ResponseTrait;
+use Illuminate\Http\JsonResponse;
 
 class OfficeController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        return Office::all();
-    }
+    use ResponseTrait;
 
     /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
+     * @return JsonResponse
      */
-    public function create()
+    public function index(): JsonResponse
     {
-        //
+        try {
+            $offices['offices'] = Office::all();
+            return $this->formatResponse(true, $offices);
+        } catch (\Exception $e) {
+            return $this->formatResponse(false, $e->getMessage());
+        }
     }
+
 
     /**
      * Store a newly created resource in storage.
@@ -39,27 +37,22 @@ class OfficeController extends Controller
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Office  $office
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Office $office)
-    {
-        return $office;
-    }
 
     /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Office  $office
-     * @return \Illuminate\Http\Response
+     * @param $id
+     * @return JsonResponse
      */
-    public function edit(Office $office)
+    public function show($id): JsonResponse
     {
-        //
+        try {
+            $office['office'] = Office::findOrFail($id);
+            return $this->formatResponse(true, $office);
+        } catch (\Exception $e) {
+            return $this->formatResponse(false, $e->getMessage());
+        }
     }
+
+
 
     /**
      * Update the specified resource in storage.
