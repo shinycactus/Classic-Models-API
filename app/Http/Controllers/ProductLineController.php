@@ -8,21 +8,12 @@ use App\Models\ProductLine;
 
 class ProductLineController extends Controller
 {
-    
+
     public function index()
     {
         return ProductLine::all();
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -35,22 +26,12 @@ class ProductLineController extends Controller
         //
     }
 
-   
+
     public function show(ProductLine $productLine)
     {
         return ProductLine::with('products')->find($productLine);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\ProductLine  $productLine
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(ProductLine $productLine)
-    {
-        //
-    }
 
     /**
      * Update the specified resource in storage.
