@@ -14,4 +14,12 @@ class Employee extends Model
     {
         return $this->belongsTo(Office::class);
     }
+
+    public function subordinate() {
+        return $this->hasMany(Employee::class, 'reports_to');
+    }
+    
+    public function supervisor() {
+        return $this->belongsTo(Employee::class, 'reports_to');
+    }
 }
