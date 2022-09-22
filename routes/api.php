@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 
 // Product Lines
 Route::get('/product-lines', [ProductLineController::class, 'index']);
-Route::get('/product-lines/{product}', [ProductLineController::class, 'show']);
+Route::get('/product-lines/{id}', [ProductLineController::class, 'show']);
 
 // Products
 Route::get('/products', [ProductController::class, 'index']);

@@ -5,13 +5,20 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreProductLineRequest;
 use App\Http\Requests\UpdateProductLineRequest;
 use App\Models\ProductLine;
+use App\Traits\ResponseTrait;
 
 class ProductLineController extends Controller
 {
+    use ResponseTrait;
 
     public function index()
     {
-        return ProductLine::all();
+        try {
+            $productLines['productLines'] = ProductLine::all();
+            return $this->formatResponse(true, $productLines);
+        } catch (\Exception $e) {
+            return $this->formatResponse(false, $e->getMessage());
+        }
     }
 
 
@@ -27,9 +34,14 @@ class ProductLineController extends Controller
     }
 
 
-    public function show(ProductLine $productLine)
+    public function show($id)
     {
-        return ProductLine::with('products')->find($productLine);
+        try {
+            $product['productLine'] = ProductLine::with('products')->findOrFail($id);
+            return $this->formatResponse(true, $product);
+        } catch (\Exception $e) {
+            return $this->formatResponse(false, $e->getMessage());
+        }
     }
 
 
