@@ -38,7 +38,7 @@ class EmployeeController extends Controller
     public function show($id)
     {
         try {
-            $employee['employee'] = Employee::findOrFail($id);
+            $employee['employee'] = Employee::with('office')->findOrFail($id);
             return $this->formatResponse(true, $employee);
         } catch (\Exception $e) {
             return $this->formatResponse(false, $e->getMessage());

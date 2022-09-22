@@ -45,7 +45,7 @@ class OfficeController extends Controller
     public function show($id): JsonResponse
     {
         try {
-            $office['office'] = Office::findOrFail($id);
+            $office['office'] = Office::with('employees')->findOrFail($id);
             return $this->formatResponse(true, $office);
         } catch (\Exception $e) {
             return $this->formatResponse(false, $e->getMessage());
