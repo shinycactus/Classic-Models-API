@@ -5,17 +5,20 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreOrderDetailRequest;
 use App\Http\Requests\UpdateOrderDetailRequest;
 use App\Models\OrderDetail;
+use App\Traits\ResponseTrait;
 
 class OrderDetailController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    use ResponseTrait;
+
     public function index()
     {
-        //
+        try {
+            $orderDetails['orderDetails'] = OrderDetail::all();
+            return $this->formatResponse(true, $orderDetails);
+        } catch (\Exception $e) {
+            return $this->formatResponse(false, $e->getMessage());
+        }
     }
 
 
@@ -31,15 +34,15 @@ class OrderDetailController extends Controller
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\OrderDetail  $orderDetail
-     * @return \Illuminate\Http\Response
-     */
-    public function show(OrderDetail $orderDetail)
+   
+    public function show($id)
     {
-        //
+        try {
+            $orderDetail['orderDetail'] = OrderDetail::findOrFail($id);
+            return $this->formatResponse(true, $orderDetail);
+        } catch (\Exception $e) {
+            return $this->formatResponse(false, $e->getMessage());
+        }
     }
 
 

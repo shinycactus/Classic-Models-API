@@ -5,17 +5,21 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreEmployeeRequest;
 use App\Http\Requests\UpdateEmployeeRequest;
 use App\Models\Employee;
+use App\Traits\ResponseTrait;
 
 class EmployeeController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    use ResponseTrait;
+    
+    
     public function index()
     {
-        return Employee::all();
+        try {
+            $employees['employees'] = Employee::all();
+            return $this->formatResponse(true, $employees);
+        } catch (\Exception $e) {
+            return $this->formatResponse(false, $e->getMessage());
+        }
     }
 
 
@@ -30,15 +34,15 @@ class EmployeeController extends Controller
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Employee  $employee
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Employee $employee)
+  
+    public function show($id)
     {
-        return $employee;
+        try {
+            $employee['employee'] = Employee::findOrFail($id);
+            return $this->formatResponse(true, $employee);
+        } catch (\Exception $e) {
+            return $this->formatResponse(false, $e->getMessage());
+        }
     }
 
     /**

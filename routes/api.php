@@ -2,10 +2,12 @@
 
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\OfficeController;
+use App\Http\Controllers\OrderController;
+use App\Http\Controllers\OrderDetailController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductLineController;
-use App\Models\ProductLine;
-use Illuminate\Http\Request;
+use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\CustomerController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,5 +35,20 @@ Route::get('/offices/{id}', [OfficeController::class, 'show']);
 
 // Employees
 Route::get('/employees', [EmployeeController::class, 'index']);
-Route::get('/employees/{employee}', [EmployeeController::class, 'show']);
+Route::get('/employees/{id}', [EmployeeController::class, 'show']);
 
+// Payments
+Route::get('/payments', [PaymentController::class, 'index']);
+Route::get('/payments/{id}', [PaymentController::class, 'show']);
+
+// Orders
+Route::get('/orders', [OrderController::class, 'index']);
+Route::get('/orders/{id}', [OrderController::class, 'show']);
+
+// Order Details
+Route::get('/order-details', [OrderDetailController::class, 'index']);
+Route::get('/order-details/{id}', [OrderDetailController::class, 'show']);
+
+// Customers
+Route::get('/customers', [CustomerController::class, 'index']);
+Route::get('/customers/{id}', [CustomerController::class, 'show']);

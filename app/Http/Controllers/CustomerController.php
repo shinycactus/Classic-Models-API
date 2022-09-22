@@ -5,17 +5,21 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreCustomerRequest;
 use App\Http\Requests\UpdateCustomerRequest;
 use App\Models\Customer;
+use App\Traits\ResponseTrait;
 
 class CustomerController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    use ResponseTrait;
+
+    
     public function index()
     {
-        //
+        try {
+            $customers['customers'] = Customer::all();
+            return $this->formatResponse(true, $customers);
+        } catch (\Exception $e) {
+            return $this->formatResponse(false, $e->getMessage());
+        }
     }
 
     /**
@@ -24,20 +28,20 @@ class CustomerController extends Controller
      * @param  \App\Http\Requests\StoreCustomerRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreCustomerRequest $request)
+    public function store(StoreCustomerRequest $id)
     {
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Customer  $customer
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Customer $customer)
+    
+    public function show($id)
     {
-        //
+        try {
+            $customer['customer'] = customer::findOrFail($id);
+            return $this->formatResponse(true, $customer);
+        } catch (\Exception $e) {
+            return $this->formatResponse(false, $e->getMessage());
+        }
     }
 
     /**
