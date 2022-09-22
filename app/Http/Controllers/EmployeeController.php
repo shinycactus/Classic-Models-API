@@ -42,8 +42,9 @@ class EmployeeController extends Controller
                 with('office')->
                 with('supervisor')->
                 with('subordinate')->
+                with('customers')->
                 findOrFail($id);
-                
+
             return $this->formatResponse(true, $employee);
         } catch (\Exception $e) {
             return $this->formatResponse(false, $e->getMessage());

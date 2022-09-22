@@ -37,7 +37,8 @@ class CustomerController extends Controller
     public function show($id)
     {
         try {
-            $customer['customer'] = customer::findOrFail($id);
+            $customer['customer'] = Customer::with('salesRep')->findOrFail($id);
+            // $customer['customer'] = Customer::findOrFail($id)->sales_rep_employee_id;
             return $this->formatResponse(true, $customer);
         } catch (\Exception $e) {
             return $this->formatResponse(false, $e->getMessage());
