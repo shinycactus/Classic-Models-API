@@ -39,7 +39,11 @@ class OrderController extends Controller
     public function show($id)
     {
         try {
-            $order['order'] = Order::findOrFail($id);
+            $order['order'] = Order::
+                with('customer')->
+                with('orderDetails')->
+                findOrFail($id);
+                
             return $this->formatResponse(true, $order);
         } catch (\Exception $e) {
             return $this->formatResponse(false, $e->getMessage());

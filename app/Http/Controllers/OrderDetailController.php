@@ -38,8 +38,12 @@ class OrderDetailController extends Controller
     public function show($id)
     {
         try {
-            $orderDetail['orderDetail'] = OrderDetail::findOrFail($id);
-            return $this->formatResponse(true, $orderDetail);
+            $orderDetail['orderDetail'] = OrderDetail::
+                with('order')->
+                with('product')->
+                findOrFail($id);
+
+                return $this->formatResponse(true, $orderDetail);
         } catch (\Exception $e) {
             return $this->formatResponse(false, $e->getMessage());
         }
