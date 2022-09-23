@@ -26,7 +26,7 @@ class PaymentController extends Controller
     public function show($id)
     {
         try {
-            $payment['payment'] = Payment::findOrFail($id);
+            $payment['payment'] = Payment::with('order')->findOrFail($id);
             return $this->formatResponse(true, $payment);
         } catch (\Exception $e) {
             return $this->formatResponse(false, $e->getMessage());

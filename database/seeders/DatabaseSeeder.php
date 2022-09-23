@@ -30,9 +30,9 @@ class DatabaseSeeder extends Seeder
             OfficeSeeder::class,
             EmployeeSeeder::class,
             CustomerSeeder::class,
-            PaymentSeeder::class,
             OrderSeeder::class,
             OrderDetailSeeder::class,
+            PaymentSeeder::class,
         ]);
     }
 }

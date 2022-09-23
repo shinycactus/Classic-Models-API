@@ -28,6 +28,7 @@ class OrderController extends Controller
             $order['order'] = Order::
                 with('customer')->
                 with('orderDetails')->
+                with('payment')->
                 findOrFail($id);
                 
             return $this->formatResponse(true, $order);
