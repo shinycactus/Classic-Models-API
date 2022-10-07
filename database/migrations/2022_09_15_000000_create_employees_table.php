@@ -18,7 +18,10 @@ return new class extends Migration
             $table->string('last_name', 50);
             $table->string('first_name', 50);
             $table->string('extension', 50);
-            $table->string('email', 100);
+            $table->string('email')->unique();
+            $table->timestamp('email_verified_at')->nullable();
+            $table->string('password');
+            $table->rememberToken();
             $table->unsignedBigInteger('office_id');
             $table->unsignedBigInteger('reports_to')->nullable()->default(null);
             $table->string('job_title', 50);
