@@ -6,6 +6,9 @@ use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use App\Traits\ResponseTrait;
+use Illuminate\Auth\AuthenticationException;
+
+
 
 class Handler extends ExceptionHandler
 {
@@ -57,4 +60,20 @@ class Handler extends ExceptionHandler
             }
         });
     }
+
+    /**
+     * Convert an authentication exception into a response.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Auth\AuthenticationException  $exception
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    protected function unauthenticated($request, AuthenticationException $exception)
+    {
+        return $request->expectsJson()
+                    ? $this->formatResponse(false, 'Unauthorized')
+                    : redirect()->guest($exception->redirectTo() ?? route('login'));
+    }
+
+ 
 }

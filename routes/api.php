@@ -34,10 +34,14 @@ use Illuminate\Support\Facades\Route;
  * Supervisors view/edit all
  */
 
-Route::post('/auth/register', [AuthController::class, 'createEmployee']);
-Route::post('/auth/login', [AuthController::class, 'loginEmployee']);
-
+ 
 Route::group(['middleware' => ['access.auth']], function() {
+    Route::post('/auth/register', [AuthController::class, 'createEmployee']);
+    Route::post('/auth/login', [AuthController::class, 'loginEmployee']);
+});
+
+
+Route::group(['middleware' => ['access.auth', 'auth:sanctum']], function() {
 
     // Product Lines
     Route::get('/product-lines', [ProductLineController::class, 'index']);

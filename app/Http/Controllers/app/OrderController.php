@@ -6,6 +6,9 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Order;
 use App\Traits\ResponseTrait;
+use Laravel\Sanctum\PersonalAccessToken;
+
+
 
 class OrderController extends Controller
 {
@@ -13,6 +16,9 @@ class OrderController extends Controller
 
     public function index()
     {
+        $user =  auth('sanctum')->user();
+        dd($user);
+
         try {
             $orders['orders'] = Order::all();
             return $this->formatResponse(true, $orders);
