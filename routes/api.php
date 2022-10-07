@@ -8,6 +8,7 @@ use App\Http\Controllers\app\ProductController;
 use App\Http\Controllers\app\ProductLineController;
 use App\Http\Controllers\app\PaymentController;
 use App\Http\Controllers\app\CustomerController;
+use App\Http\Controllers\Api\AuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,6 +34,8 @@ use Illuminate\Support\Facades\Route;
  * Supervisors view/edit all
  */
 
+Route::post('/auth/register', [AuthController::class, 'createEmployee']);
+Route::post('/auth/login', [AuthController::class, 'loginEmployee']);
 
 Route::group(['middleware' => ['access.auth']], function() {
 
