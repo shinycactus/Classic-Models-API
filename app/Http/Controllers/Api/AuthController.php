@@ -8,9 +8,12 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use App\Traits\ResponseTrait;
 
 class AuthController extends Controller
 {
+    use ResponseTrait; 
+
     /**
      * Create Employee
      * @param Request $request
@@ -19,25 +22,23 @@ class AuthController extends Controller
     public function createEmployee(Request $request)
     {
         try {
-          
             //Validated
             $validateUser = Validator::make($request->all(), 
             [
-                // 'name' => 'required',
                 'email' => 'required|email|unique:users,email',
-                'password' => 'required'
+                'first_name' => 'required',
+                'last_name' => 'required',
+                'password' => 'required',
+                'extension' => 'required',
+                'office_id' => 'required',
+                'job_title' => 'required',
             ]);
 
             if($validateUser->fails()){
-                return response()->json([
-                    'status' => false,
-                    'message' => 'validation error',
-                    'errors' => $validateUser->errors()
-                ], 401);
+                return $this->formatResponse(false, $validateUser->errors());
             }
 
             $employee = Employee::create([
-                // 'name' => $request->name,
                 'email' => $request->email,
                 'first_name' => $request->first_name,
                 'last_name' => $request->last_name,
@@ -47,17 +48,10 @@ class AuthController extends Controller
                 'job_title' => $request->job_title,
             ]);
 
-            return response()->json([
-                'status' => true,
-                'message' => 'Employee Created Successfully',
-                'token' => $employee->createToken("API TOKEN")->plainTextToken
-            ], 200);
+            return $this->formatResponse(true, ['token' => $employee->createToken("API TOKEN")->plainTextToken]);
 
         } catch (\Throwable $th) {
-            return response()->json([
-                'status' => false,
-                'message' => $th->getMessage()
-            ], 500);
+            return $this->formatResponse(false, $th->getMessage());
         }
     }
 
@@ -75,37 +69,20 @@ class AuthController extends Controller
                 'email' => 'required|email',
                 'password' => 'required'
             ]);
-          
 
             if($validateEmployee->fails()){
-                return response()->json([
-                    'status' => false,
-                    'message' => 'validation error',
-                    'errors' => $validateEmployee->errors()
-                ], 401);
+                return $this->formatResponse(false, $validateEmployee->errors());
             }
-            // dd($employee = Employee::where('email', $request->email)->first());
-        //    dd($request->only(['email', 'password']));
+
             if(!Auth::attempt($request->only(['email', 'password']))){
-                return response()->json([
-                    'status' => false,
-                    'message' => 'Email & Password does not match with our record.',
-                ], 401);
+                return $this->formatResponse(false, 'Email or Password incorrect.');
             }
 
             $employee = Employee::where('email', $request->email)->first();
 
-            return response()->json([
-                'status' => true,
-                'message' => 'User Logged In Successfully',
-                'token' => $employee->createToken("API TOKEN")->plainTextToken
-            ], 200);
-
+            return $this->formatResponse(true, ['token' => $employee->createToken("API TOKEN")->plainTextToken]);
         } catch (\Throwable $th) {
-            return response()->json([
-                'status' => false,
-                'message' => $th->getMessage()
-            ], 500);
+            return $this->formatResponse(false, $th->getMessage());
         }
     }
 }

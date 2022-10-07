@@ -22,7 +22,7 @@ trait ResponseTrait {
     {
         $data = [
             'status' => 'error',
-            'error' => ['Not found']
+            'errors' => ['Not found']
         ];
 
         if (!$status) {
@@ -34,9 +34,11 @@ trait ResponseTrait {
                 $payload = [$payload];
             }
 
+
+
             $data = [
                 'status' => 'error',
-                'error' => $payload,
+                'errors' => $this->flattenErrors($payload),
             ];
         }
 
@@ -50,4 +52,33 @@ trait ResponseTrait {
 
         return response()->json($data);
     }
+
+    protected function flattenErrors($payload)
+    {
+        if (is_string($payload)) {
+            return $payload;
+        }
+        
+        if (is_array($payload)) {
+            return $this->arrayFlatten($payload);
+        }
+
+        if (!method_exists($payload, 'getMessageBag')) {
+            return $payload;
+        }
+
+        return $this->arrayFlatten($payload->getMessageBag()->getMessages());
+    }
+
+    protected function arrayFlatten($arr) {
+        $return = [];
+        foreach ($arr as $key => $value) {
+            if (is_array($value)) {
+                $return = array_merge($return, $this->arrayFlatten($value));
+            } else {
+                $return[] = $value;
+            }
+        }
+        return $return;
+    }  
 }
