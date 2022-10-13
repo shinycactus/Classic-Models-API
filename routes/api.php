@@ -1,13 +1,21 @@
 <?php
 
-use App\Http\Controllers\app\OrderController;
-use App\Http\Controllers\app\OrderDetailController;
-use App\Http\Controllers\app\EmployeeController;
-use App\Http\Controllers\app\OfficeController;
-use App\Http\Controllers\app\ProductController;
-use App\Http\Controllers\app\ProductLineController;
-use App\Http\Controllers\app\PaymentController;
-use App\Http\Controllers\app\CustomerController;
+use App\Http\Controllers\Admin\OrderController as AdminOrderController;
+use App\Http\Controllers\app\OrderController as AppOrderController;
+use App\Http\Controllers\app\OrderDetailController as AppOrderDetailController;
+use App\Http\Controllers\Admin\OrderDetailController as AdminOrderDetailController;
+use App\Http\Controllers\app\EmployeeController as AppEmployeeController;
+use App\Http\Controllers\Admin\EmployeeController as AdminEmployeeController;
+use App\Http\Controllers\app\OfficeController as AppOfficeController;
+use App\Http\Controllers\Admin\OfficeController as AdminOfficeController;
+use App\Http\Controllers\app\ProductController as AppProductController;
+use App\Http\Controllers\Admin\ProductController as AdminProductController;
+use App\Http\Controllers\app\ProductLineController as AppProductLineController;
+use App\Http\Controllers\Admin\ProductLineController as AdminProductLineController;
+use App\Http\Controllers\app\PaymentController as AppPaymentController;
+use App\Http\Controllers\Admin\PaymentController as AdminPaymentController;
+use App\Http\Controllers\app\CustomerController as AppCustomerController;
+use App\Http\Controllers\Admin\CustomerController as AdminCustomerController;
 use App\Http\Controllers\Api\AuthController;
 use Illuminate\Support\Facades\Route;
 
@@ -44,39 +52,72 @@ Route::group(['middleware' => ['access.auth']], function() {
 Route::group(['middleware' => ['access.auth', 'auth:sanctum']], function() {
 
     // Product Lines
-    Route::get('/product-lines', [ProductLineController::class, 'index']);
-    Route::get('/product-lines/{id}', [ProductLineController::class, 'show']);
+    Route::get('/app/product-lines', [AppProductLineController::class, 'index']);
+    Route::get('/app/product-lines/{id}', [AppProductLineController::class, 'show']);
+
+    // Products
+    Route::get('/app/products', [AppProductController::class, 'index']);
+    Route::get('/app/products/{id}', [AppProductController::class, 'show']);
+
+    // Offices
+    Route::get('/app/offices', [AppOfficeController::class, 'index']);
+    Route::get('/app/offices/{id}', [AppOfficeController::class, 'show']);
+
+    // Employees
+    Route::get('/app/employees', [AppEmployeeController::class, 'index']);
+    Route::get('/app/employees/{id}', [AppEmployeeController::class, 'show']);
+
+    // Payments
+    Route::get('/app/payments', [AppPaymentController::class, 'index']);
+    Route::get('/app/payments/{id}', [AppPaymentController::class, 'show']);
+
+    // Orders
+    Route::get('/app/orders', [AppOrderController::class, 'index']);
+    Route::get('/app/orders/{id}', [AppOrderController::class, 'show']);
+
+    // Order Details
+    Route::get('/app/order-details', [AppOrderDetailController::class, 'index']);
+    Route::get('/app/order-details/{id}', [AppOrderDetailController::class, 'show']);
+
+    // Customers
+    Route::get('/app/customers/{id}', [AppCustomerController::class, 'show']);
+});
+
+// ToDo: Admin Auth
+Route::group(['middleware' => ['access.auth', 'auth:sanctum']], function() {
+
+    // Product Lines
+    Route::get('/admin/product-lines', [AdminProductLineController::class, 'index']);
+    Route::get('/admin/product-lines/{id}', [AdminProductLineController::class, 'show']);
     // store - post
     // update - patch
     // destroy - delete
 
     // Products
-    Route::get('/products', [ProductController::class, 'index']);
-    Route::get('/products/{id}', [ProductController::class, 'show']);
-
-    // Offices
-    Route::get('/offices', [OfficeController::class, 'index']);
-    Route::get('/offices/{id}', [OfficeController::class, 'show']);
+    Route::get('/admin/products', [AdminProductController::class, 'index']);
+    Route::get('/admin/products/{id}', [AdminProductController::class, 'show']);
 
     // Employees
-    Route::get('/employees', [EmployeeController::class, 'index']);
-    Route::get('/employees/{id}', [EmployeeController::class, 'show']);
-
-    // Payments
-    Route::get('/payments', [PaymentController::class, 'index']);
-    Route::get('/payments/{id}', [PaymentController::class, 'show']);
-
-    // Orders
-    Route::get('/orders', [OrderController::class, 'index']);
-    Route::get('/orders/{id}', [OrderController::class, 'show']);
-
-    // Order Details
-    Route::get('/order-details', [OrderDetailController::class, 'index']);
-    Route::get('/order-details/{id}', [OrderDetailController::class, 'show']);
+    Route::get('/admin/employees', [AdminEmployeeController::class, 'index']);
+    Route::get('/admin/employees/{id}', [AdminEmployeeController::class, 'show']);
 
     // Customers
-    Route::get('/customers', [CustomerController::class, 'index']);
-    Route::get('/customers/{id}', [CustomerController::class, 'show']);
-    
-});
+    Route::get('/admin/customers', [AdminCustomerController::class, 'index']);
+    Route::get('/admin/customers/{id}', [AdminCustomerController::class, 'show']);
 
+    // Offices
+    Route::get('/admin/offices', [AdminOfficeController::class, 'index']);
+    Route::get('/admin/offices/{id}', [AdminOfficeController::class, 'show']);
+
+    // Orders
+    Route::get('/admin/orders', [AdminOrderController::class, 'index']);
+    Route::get('/admin/orders/{id}', [AdminOrderController::class, 'show']);
+
+    // Order Details
+    Route::get('/admin/order-details', [AdminOrderDetailController::class, 'index']);
+    Route::get('/admin/order-details/{id}', [AdminOrderDetailController::class, 'show']);
+
+    // Payments
+    Route::get('/admin/payments', [AdminPaymentController::class, 'index']);
+    Route::get('/admin/payments/{id}', [AdminPaymentController::class, 'show']);
+});

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\app;
+namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -10,7 +10,7 @@ use App\Traits\ResponseTrait;
 class ProductLineController extends Controller
 {
     use ResponseTrait;
-
+    
     public function index()
     {
         try {
@@ -21,7 +21,6 @@ class ProductLineController extends Controller
         }
     }
 
-
     public function show($id)
     {
         try {
@@ -31,4 +30,13 @@ class ProductLineController extends Controller
             return $this->formatResponse(false, $e->getMessage());
         }
     }
+
+    // TODO
+    // public function store
+
+    // TODO
+    // public function update
+
+    // TODO
+    // public function destroy
 }

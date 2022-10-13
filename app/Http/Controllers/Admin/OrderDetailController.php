@@ -1,32 +1,35 @@
 <?php
 
-namespace App\Http\Controllers\app;
+namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\ProductLine;
+use App\Models\OrderDetail;
 use App\Traits\ResponseTrait;
 
-class ProductLineController extends Controller
+class OrderDetailController extends Controller
 {
     use ResponseTrait;
 
     public function index()
     {
         try {
-            $productLines['productLines'] = ProductLine::all();
-            return $this->formatResponse(true, $productLines);
+            $orderDetails['orderDetails'] = OrderDetail::all();
+            return $this->formatResponse(true, $orderDetails);
         } catch (\Exception $e) {
             return $this->formatResponse(false, $e->getMessage());
         }
     }
 
-
     public function show($id)
     {
         try {
-            $product['productLine'] = ProductLine::with('products')->findOrFail($id);
-            return $this->formatResponse(true, $product);
+            $orderDetail['orderDetail'] = OrderDetail::
+                with('order')->
+                with('product')->
+                findOrFail($id);
+
+                return $this->formatResponse(true, $orderDetail);
         } catch (\Exception $e) {
             return $this->formatResponse(false, $e->getMessage());
         }

@@ -31,14 +31,4 @@ class ProductController extends Controller
             return $this->formatResponse(false, $e->getMessage());
         }
     }
-
-
-    // TODO
-    // public function store
-
-    // TODO
-    // public function update
-
-    // TODO
-    // public function destroy
 }

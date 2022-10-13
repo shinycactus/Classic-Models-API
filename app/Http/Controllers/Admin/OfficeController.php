@@ -1,21 +1,21 @@
 <?php
 
-namespace App\Http\Controllers\app;
+namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\ProductLine;
+use App\Models\Office;
 use App\Traits\ResponseTrait;
 
-class ProductLineController extends Controller
+class OfficeController extends Controller
 {
     use ResponseTrait;
-
+    
     public function index()
     {
         try {
-            $productLines['productLines'] = ProductLine::all();
-            return $this->formatResponse(true, $productLines);
+            $offices['offices'] = Office::all();
+            return $this->formatResponse(true, $offices);
         } catch (\Exception $e) {
             return $this->formatResponse(false, $e->getMessage());
         }
@@ -25,8 +25,8 @@ class ProductLineController extends Controller
     public function show($id)
     {
         try {
-            $product['productLine'] = ProductLine::with('products')->findOrFail($id);
-            return $this->formatResponse(true, $product);
+            $office['office'] = Office::with('employees')->findOrFail($id);
+            return $this->formatResponse(true, $office);
         } catch (\Exception $e) {
             return $this->formatResponse(false, $e->getMessage());
         }
