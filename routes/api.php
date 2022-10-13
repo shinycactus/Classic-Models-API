@@ -1,20 +1,20 @@
 <?php
 
 use App\Http\Controllers\Admin\OrderController as AdminOrderController;
-use App\Http\Controllers\app\OrderController as AppOrderController;
-use App\Http\Controllers\app\OrderDetailController as AppOrderDetailController;
+use App\Http\Controllers\App\OrderController as AppOrderController;
+use App\Http\Controllers\App\OrderDetailController as AppOrderDetailController;
 use App\Http\Controllers\Admin\OrderDetailController as AdminOrderDetailController;
-use App\Http\Controllers\app\EmployeeController as AppEmployeeController;
+use App\Http\Controllers\App\EmployeeController as AppEmployeeController;
 use App\Http\Controllers\Admin\EmployeeController as AdminEmployeeController;
-use App\Http\Controllers\app\OfficeController as AppOfficeController;
+use App\Http\Controllers\App\OfficeController as AppOfficeController;
 use App\Http\Controllers\Admin\OfficeController as AdminOfficeController;
-use App\Http\Controllers\app\ProductController as AppProductController;
+use App\Http\Controllers\App\ProductController as AppProductController;
 use App\Http\Controllers\Admin\ProductController as AdminProductController;
-use App\Http\Controllers\app\ProductLineController as AppProductLineController;
+use App\Http\Controllers\App\ProductLineController as AppProductLineController;
 use App\Http\Controllers\Admin\ProductLineController as AdminProductLineController;
-use App\Http\Controllers\app\PaymentController as AppPaymentController;
+use App\Http\Controllers\App\PaymentController as AppPaymentController;
 use App\Http\Controllers\Admin\PaymentController as AdminPaymentController;
-use App\Http\Controllers\app\CustomerController as AppCustomerController;
+use App\Http\Controllers\App\CustomerController as AppCustomerController;
 use App\Http\Controllers\Admin\CustomerController as AdminCustomerController;
 use App\Http\Controllers\Api\AuthController;
 use Illuminate\Support\Facades\Route;
