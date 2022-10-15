@@ -33,9 +33,9 @@ use Illuminate\Support\Facades\Route;
 /**
  * TODO
  * 
- * Access token middleware
- * Customer login
- * Employee login
+ * Employee middleware
+ * Customer middleware
+ * 
  * 
  * Customer only view their orders
  * Employee only view/edit thier customers, and orders
@@ -89,7 +89,7 @@ Route::group(['middleware' => ['access.auth', 'auth:sanctum']], function() {
 });
 
 // ToDo: Admin Auth
-Route::group(['middleware' => ['access.auth', 'auth:sanctum']], function() {
+Route::group(['middleware' => ['access.auth', 'auth:sanctum', 'ensure.employee']], function() {
 
     // Product Lines
     Route::get('/admin/product-lines', [AdminProductLineController::class, 'index']);
