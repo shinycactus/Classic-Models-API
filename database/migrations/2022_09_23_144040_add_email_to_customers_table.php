@@ -14,7 +14,10 @@ return new class extends Migration
     public function up()
     {
         Schema::table('customers', function (Blueprint $table) {
-            $table->string('email')->after('phone');
+            $table->string('email')->after('phone')->unique();
+            $table->timestamp('email_verified_at')->nullable()->after('email');
+            $table->string('password')->after('email_verified_at');
+            $table->rememberToken()->after('password');
             $table->renameColumn('customer_name', 'name');
         });
     }
