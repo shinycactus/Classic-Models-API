@@ -24,7 +24,13 @@ class EnsureEmployee
     public function handle(Request $request, Closure $next): JsonResponse
     {
         $employee =  auth('sanctum')->user();
-        if(Employee::select('id')->where('id', $employee->id)->first()) {
+        $password = Employee::select('password')->where('id', $employee->id)->first();
+
+        if (!$password) {
+            return $this->formatResponse(false, ['Invalid permission']);
+        }
+
+        if ($password->password == $employee->getAuthPassword()) {
             return $next($request);
         }
 
