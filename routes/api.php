@@ -44,8 +44,13 @@ use Illuminate\Support\Facades\Route;
 
  
 Route::group(['middleware' => ['access.auth']], function() {
-    Route::post('/auth/register', [AuthController::class, 'createEmployee']);
-    Route::post('/auth/login', [AuthController::class, 'loginEmployee']);
+    // Auth employee
+    Route::post('/admin/register', [AuthController::class, 'createEmployee']);
+    Route::post('/admin/login', [AuthController::class, 'loginEmployee']);
+
+    // Auth customer
+    Route::post('/app/register', [AuthController::class, 'createCustomer']);
+    Route::post('/app/login', [AuthController::class, 'loginCustomer']);
 });
 
 
