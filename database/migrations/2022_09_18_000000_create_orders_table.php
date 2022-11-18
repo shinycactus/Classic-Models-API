@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\DB;
 
 return new class extends Migration
 {
@@ -15,8 +16,8 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->date('order_date', 'Y-m-d');
-            $table->date('required_date', 'Y-m-d');
+            $table->date('order_date', 'Y-m-d')->nullable()->default(null);
+            $table->date('required_date', 'Y-m-d')->nullable()->default(null);
             $table->date('shipped_date', 'Y-m-d')->nullable()->default(null);
             $table->string('status', 15);
             $table->text('comments')->nullable()->default(null);

@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('product_id', 15);
             $table->integer('quantity_ordered');
             $table->decimal('price_each', 10,2);
-            $table->integer('order_line_number');
+            $table->integer('order_line_number')->nullable()->default(null);
             $table->timestamps();
 
             $table->foreign('order_id')->references('id')->on('orders');

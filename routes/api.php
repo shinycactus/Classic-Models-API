@@ -77,8 +77,11 @@ Route::group(['middleware' => ['access.auth', 'auth:sanctum']], function() {
     Route::get('/app/payments/{payment}', [AppPaymentController::class, 'view']);
 
     // Orders
+    Route::post('/app/orders', [AppOrderController::class, 'store']);
+
     Route::get('/app/orders', [AppOrderController::class, 'index']);
     Route::get('/app/orders/{order}', [AppOrderController::class, 'view']);
+
 
     // Order Details
     Route::get('/app/order-details', [AppOrderDetailController::class, 'index']);

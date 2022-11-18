@@ -14,7 +14,7 @@ class ProductController extends Controller
     public function index()
     {
         try {
-            $products['products'] = Product::all();
+            $products = Product::all();
             return $this->formatResponse(true, $products);
         } catch (\Exception $e) {
             return $this->formatResponse(false, $e->getMessage());

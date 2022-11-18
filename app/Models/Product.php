@@ -9,6 +9,8 @@ class Product extends Model
 {
     use HasFactory;
 
+    protected $casts = ['id' => 'string'];
+
     public function productLine()
     {
         return $this->belongsTo(ProductLine::class);
