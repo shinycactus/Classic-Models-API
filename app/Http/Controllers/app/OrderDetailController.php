@@ -22,15 +22,13 @@ class OrderDetailController extends Controller
         }
     }
 
-    public function show($id)
+    public function view(OrderDetail $orderDetail)
     {
         try {
-            $orderDetail['orderDetail'] = OrderDetail::
-                with('order')->
-                with('product')->
-                findOrFail($id);
+            $orderDetail->load('order');
+            $orderDetail->load('product');
 
-                return $this->formatResponse(true, $orderDetail);
+            return $this->formatResponse(true, $orderDetail);
         } catch (\Exception $e) {
             return $this->formatResponse(false, $e->getMessage());
         }

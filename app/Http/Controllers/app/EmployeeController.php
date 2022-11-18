@@ -23,15 +23,13 @@ class EmployeeController extends Controller
     }
 
 
-    public function show($id)
+    public function view(Employee $employee)
     {
         try {
-            $employee['employee'] = Employee::
-                with('office')->
-                with('supervisor')->
-                with('subordinate')->
-                with('customers')->
-                findOrFail($id);
+            $employee->load('office');
+            $employee->load('supervisor');
+            $employee->load('subordinate');
+            $employee->load('customers');
 
             return $this->formatResponse(true, $employee);
         } catch (\Exception $e) {

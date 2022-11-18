@@ -62,19 +62,19 @@ Route::group(['middleware' => ['access.auth', 'auth:sanctum']], function() {
 
     // Products
     Route::get('/app/products', [AppProductController::class, 'index']);
-    Route::get('/app/products/{id}', [AppProductController::class, 'show']);
+    Route::get('/app/products/{product}', [AppProductController::class, 'view']);
 
     // Offices
     Route::get('/app/offices', [AppOfficeController::class, 'index']);
-    Route::get('/app/offices/{id}', [AppOfficeController::class, 'show']);
+    Route::get('/app/offices/{office}', [AppOfficeController::class, 'view']);
 
     // Employees
     Route::get('/app/employees', [AppEmployeeController::class, 'index']);
-    Route::get('/app/employees/{id}', [AppEmployeeController::class, 'show']);
+    Route::get('/app/employees/{employee}', [AppEmployeeController::class, 'view']);
 
     // Payments
     Route::get('/app/payments', [AppPaymentController::class, 'index']);
-    Route::get('/app/payments/{id}', [AppPaymentController::class, 'show']);
+    Route::get('/app/payments/{payment}', [AppPaymentController::class, 'view']);
 
     // Orders
     Route::get('/app/orders', [AppOrderController::class, 'index']);
@@ -82,10 +82,10 @@ Route::group(['middleware' => ['access.auth', 'auth:sanctum']], function() {
 
     // Order Details
     Route::get('/app/order-details', [AppOrderDetailController::class, 'index']);
-    Route::get('/app/order-details/{id}', [AppOrderDetailController::class, 'show']);
+    Route::get('/app/order-details/{orderDetail}', [AppOrderDetailController::class, 'view']);
 
     // Customers
-    Route::get('/app/customers/{id}', [AppCustomerController::class, 'show']);
+    Route::get('/app/customers/{customer}', [AppCustomerController::class, 'view']);
 });
 
 // ToDo: Admin Auth

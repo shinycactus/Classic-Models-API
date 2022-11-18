@@ -22,11 +22,12 @@ class ProductLineController extends Controller
     }
 
 
-    public function show($id)
+    public function view(ProductLine $productLine)
     {
         try {
-            $product['productLine'] = ProductLine::with('products')->findOrFail($id);
-            return $this->formatResponse(true, $product);
+            $productLine->load('products');
+
+            return $this->formatResponse(true, $productLine);
         } catch (\Exception $e) {
             return $this->formatResponse(false, $e->getMessage());
         }

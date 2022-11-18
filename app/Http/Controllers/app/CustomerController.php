@@ -11,15 +11,13 @@ class CustomerController extends Controller
 {
     use ResponseTrait;
    
-    public function show($id)
+    public function view(Customer $customer)
     {
         try {
-            $customer['customer'] = Customer::
-                with('salesRep')->
-                with('orders')->
-                findOrFail($id);
+            $customer->load('salesRep');
+            $customer->load('orders');
 
-                return $this->formatResponse(true, $customer);
+            return $this->formatResponse(true, $customer);
         } catch (\Exception $e) {
             return $this->formatResponse(false, $e->getMessage());
         }

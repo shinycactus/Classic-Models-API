@@ -22,10 +22,11 @@ class PaymentController extends Controller
     }
 
 
-    public function show($id)
+    public function view(Payment $payment)
     {
         try {
-            $payment['payment'] = Payment::with('order')->findOrFail($id);
+            $payment->load('order');
+
             return $this->formatResponse(true, $payment);
         } catch (\Exception $e) {
             return $this->formatResponse(false, $e->getMessage());
