@@ -22,10 +22,11 @@ class OfficeController extends Controller
     }
 
 
-    public function show($id)
+    public function view(Office $office)
     {
         try {
-            $office['office'] = Office::with('employees')->findOrFail($id);
+            $office->load('employees');
+            
             return $this->formatResponse(true, $office);
         } catch (\Exception $e) {
             return $this->formatResponse(false, $e->getMessage());

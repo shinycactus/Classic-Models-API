@@ -58,7 +58,7 @@ Route::group(['middleware' => ['access.auth', 'auth:sanctum']], function() {
 
     // Product Lines
     Route::get('/app/product-lines', [AppProductLineController::class, 'index']);
-    Route::get('/app/product-lines/{id}', [AppProductLineController::class, 'show']);
+    Route::get('/app/product-lines/{productLine}', [AppProductLineController::class, 'view']);
 
     // Products
     Route::get('/app/products', [AppProductController::class, 'index']);
@@ -78,7 +78,7 @@ Route::group(['middleware' => ['access.auth', 'auth:sanctum']], function() {
 
     // Orders
     Route::get('/app/orders', [AppOrderController::class, 'index']);
-    Route::get('/app/orders/{id}', [AppOrderController::class, 'show']);
+    Route::get('/app/orders/{order}', [AppOrderController::class, 'view']);
 
     // Order Details
     Route::get('/app/order-details', [AppOrderDetailController::class, 'index']);
@@ -93,36 +93,36 @@ Route::group(['middleware' => ['access.auth', 'auth:sanctum', 'ensure.employee']
 
     // Product Lines
     Route::get('/admin/product-lines', [AdminProductLineController::class, 'index']);
-    Route::get('/admin/product-lines/{id}', [AdminProductLineController::class, 'show']);
+    Route::get('/admin/product-lines/{productLine}', [AdminProductLineController::class, 'view']);
     // store - post
     // update - patch
     // destroy - delete
 
     // Products
     Route::get('/admin/products', [AdminProductController::class, 'index']);
-    Route::get('/admin/products/{id}', [AdminProductController::class, 'show']);
+    Route::get('/admin/products/{product}', [AdminProductController::class, 'view']);
 
     // Employees
     Route::get('/admin/employees', [AdminEmployeeController::class, 'index']);
-    Route::get('/admin/employees/{id}', [AdminEmployeeController::class, 'show']);
+    Route::get('/admin/employees/{employee}', [AdminEmployeeController::class, 'view']);
 
     // Customers
     Route::get('/admin/customers', [AdminCustomerController::class, 'index']);
-    Route::get('/admin/customers/{id}', [AdminCustomerController::class, 'show']);
+    Route::get('/admin/customers/{customer}', [AdminCustomerController::class, 'view']);
 
     // Offices
     Route::get('/admin/offices', [AdminOfficeController::class, 'index']);
-    Route::get('/admin/offices/{id}', [AdminOfficeController::class, 'show']);
+    Route::get('/admin/offices/{office}', [AdminOfficeController::class, 'view']);
 
     // Orders
     Route::get('/admin/orders', [AdminOrderController::class, 'index']);
-    Route::get('/admin/orders/{id}', [AdminOrderController::class, 'show']);
+    Route::get('/admin/orders/{order}', [AdminOrderController::class, 'view']);
 
     // Order Details
     Route::get('/admin/order-details', [AdminOrderDetailController::class, 'index']);
-    Route::get('/admin/order-details/{id}', [AdminOrderDetailController::class, 'show']);
+    Route::get('/admin/order-details/{orderDetail}', [AdminOrderDetailController::class, 'view']);
 
     // Payments
     Route::get('/admin/payments', [AdminPaymentController::class, 'index']);
-    Route::get('/admin/payments/{id}', [AdminPaymentController::class, 'show']);
+    Route::get('/admin/payments/{payment}', [AdminPaymentController::class, 'view']);
 });

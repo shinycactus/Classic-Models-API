@@ -4,6 +4,7 @@ namespace App\Policies;
 
 use App\Models\Order;
 use App\Models\User;
+use App\Models\Customer;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class OrderPolicy
@@ -28,9 +29,10 @@ class OrderPolicy
      * @param  \App\Models\Order  $order
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, Order $order)
+    // public function view(User $user, Order $order)
+    public function view(Customer $customer, Order $order)
     {
-        //
+        return $order->customer_id == $customer->id;
     }
 
     /**

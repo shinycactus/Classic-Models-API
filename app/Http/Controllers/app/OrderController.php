@@ -13,8 +13,8 @@ class OrderController extends Controller
 
     public function index()
     {
-        $user =  auth('sanctum')->user();
-        dd($user);
+        // $user =  auth('sanctum')->user();
+        // dd($user);
 
         try {
             $orders['orders'] = Order::all();
@@ -25,14 +25,14 @@ class OrderController extends Controller
     }
 
 
-    public function show($id)
+    public function view(Order $order)
     {
         try {
-            $order['order'] = Order::
-                with('customer')->
-                with('orderDetails')->
-                with('payment')->
-                findOrFail($id);
+            $this->authorize('view', $order);
+
+            $order->load('customer');
+            $order->load('orderDetails');
+            $order->load('payment');
                 
             return $this->formatResponse(true, $order);
         } catch (\Exception $e) {

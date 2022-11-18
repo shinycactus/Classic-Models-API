@@ -21,15 +21,13 @@ class CustomerController extends Controller
         }
     }
 
-    public function show($id)
+    public function view(Customer $customer)
     {
         try {
-            $customer['customer'] = Customer::
-                with('salesRep')->
-                with('orders')->
-                findOrFail($id);
-
-                return $this->formatResponse(true, $customer);
+            $customer->load('salesRep');
+            $customer->load('orders');
+            
+            return $this->formatResponse(true, $customer);
         } catch (\Exception $e) {
             return $this->formatResponse(false, $e->getMessage());
         }
