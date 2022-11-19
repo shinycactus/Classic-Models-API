@@ -4,7 +4,6 @@ Based on the sample database, with some changes taken from https://www.mysqltuto
 
 ## General ToDo:
 
-Create a Status table to be used for order status'
 
 Refactor status column orders table to use an ID from the status table above
 
