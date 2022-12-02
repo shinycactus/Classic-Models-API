@@ -21,7 +21,7 @@ class OrderController extends Controller
         // dd($user);
 
         try {
-            $orders['orders'] = Order::all();
+            $orders['orders'] = Order::with('orderItems')->get();
             return $this->formatResponse(true, $orders);
         } catch (\Exception $e) {
             return $this->formatResponse(false, $e->getMessage());
@@ -35,7 +35,7 @@ class OrderController extends Controller
             $this->authorize('view', $order);
 
             $order->load('customer');
-            $order->load('orderDetails');
+            $order->load('orderItems');
             $order->load('payment');
                 
             return $this->formatResponse(true, $order);
@@ -49,7 +49,7 @@ class OrderController extends Controller
         // TODO: store policy
         try {
             $customer =  auth('sanctum')->user();
-            $orderDetails = $this->getOrderDetails($request->input('order_details'));
+            $orderItems = $this->getOrderItems($request->input('order_details'));
 
             $order = Order::create([
                 'status' => 'In Process',
@@ -58,7 +58,7 @@ class OrderController extends Controller
             ]);
 
             if ($order) {
-                foreach($orderDetails as $orderDetail) {
+                foreach($orderItems as $orderDetail) {
                     $orderDetail['order_id'] = $order->id;
                     OrderDetail::create($orderDetail);
                 }
@@ -71,9 +71,9 @@ class OrderController extends Controller
         }
     }
 
-    public function getOrderDetails($items)
+    public function getOrderItems($items)
     {   
-        $orderDetails = [];
+        $orderItems = [];
         foreach($items as $item) {
             $product = Product::where(['id' => $item['product_id']])->first();
 
@@ -89,9 +89,9 @@ class OrderController extends Controller
             ];
 
 
-            array_push($orderDetails, $orderDetail);
+            array_push($orderItems, $orderDetail);
         }
         
-        return $orderDetails;
+        return $orderItems;
     }
 }

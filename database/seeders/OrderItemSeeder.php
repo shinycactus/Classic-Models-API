@@ -7,7 +7,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Product;
 
-class OrderDetailSeeder extends Seeder
+class OrderItemSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,7 +16,7 @@ class OrderDetailSeeder extends Seeder
      */
     public function run()
     {
-        $orderDetails = [ 
+        $orderItems = [ 
             ['order_id' => 10100, 'product_id' => 'S18_1749', 'quantity_ordered' => 30, 'price_each' => '136.00', 'order_line_number' => 3],
             ['order_id' => 10100, 'product_id' => 'S18_2248', 'quantity_ordered' => 50, 'price_each' => '55.09', 'order_line_number' => 2],
             ['order_id' => 10100, 'product_id' => 'S18_4409', 'quantity_ordered' => 22, 'price_each' => '75.46', 'order_line_number' => 4],
@@ -3015,7 +3015,7 @@ class OrderDetailSeeder extends Seeder
             ['order_id' => 10425, 'product_id' => 'S50_1392', 'quantity_ordered' => 18, 'price_each' => '94.92', 'order_line_number' => 2]
         ];
 
-        foreach($orderDetails as $orderDetail) {
+        foreach($orderItems as $orderDetail) {
             if(Product::where('id', '=', $orderDetail['product_id'])->exists()) {
                 OrderDetail::insert($orderDetail);
             }

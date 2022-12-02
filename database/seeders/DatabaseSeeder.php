@@ -13,7 +13,7 @@ use Database\Seeders\EmployeeSeeder;
 use Database\Seeders\CustomerSeeder;
 use Database\Seeders\PaymentSeeder;
 use Database\Seeders\OrderSeeder;
-use Database\Seeders\OrderDetailSeeder;
+use Database\Seeders\OrderItemSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -31,7 +31,7 @@ class DatabaseSeeder extends Seeder
             EmployeeSeeder::class,
             CustomerSeeder::class,
             OrderSeeder::class,
-            OrderDetailSeeder::class,
+            OrderItemSeeder::class,
             PaymentSeeder::class,
         ]);
     }

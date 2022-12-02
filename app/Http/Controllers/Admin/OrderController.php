@@ -14,10 +14,10 @@ class OrderController extends Controller
     public function index()
     {
         $user =  auth('sanctum')->user();
-        dd($user);
+        // dd($user);
 
         try {
-            $orders['orders'] = Order::all();
+            $orders['orders'] = Order::with('orderItems')->get();
             return $this->formatResponse(true, $orders);
         } catch (\Exception $e) {
             return $this->formatResponse(false, $e->getMessage());
@@ -29,7 +29,7 @@ class OrderController extends Controller
     {
         try {
             $order->load('customer');
-            $order->load('orderDetails');
+            $order->load('orderItems');
             $order->load('payment');
                 
             return $this->formatResponse(true, $order);

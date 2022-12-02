@@ -14,8 +14,8 @@ class OrderDetailController extends Controller
     public function index()
     {
         try {
-            $orderDetails['orderDetails'] = OrderDetail::all();
-            return $this->formatResponse(true, $orderDetails);
+            $orderItems['orderItems'] = OrderDetail::all();
+            return $this->formatResponse(true, $orderItems);
         } catch (\Exception $e) {
             return $this->formatResponse(false, $e->getMessage());
         }

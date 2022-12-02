@@ -16,13 +16,13 @@ class PaymentSeeder extends Seeder
      */
     public function run()
     {
-        $orders = Order::with('orderDetails')->get();
+        $orders = Order::with('orderItems')->get();
 
         foreach($orders as $order) {
 
             $amount = 0;
 
-            foreach($order->orderDetails as $orderDetail) {
+            foreach($order->orderItems as $orderDetail) {
                 $itemTotalPrice = ($orderDetail->price_each * $orderDetail->quantity_ordered);
                 $amount += $itemTotalPrice;
             }

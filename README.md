@@ -5,7 +5,7 @@ Based on the sample database, with some changes taken from https://www.mysqltuto
 ## General ToDo:
 
 
-Refactor status column orders table to use an ID from the status table above
+Refactor status column orders table to use an ID from the status table above /
 
 Refactor OrderDetails to OrderItems
 
