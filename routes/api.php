@@ -2,8 +2,8 @@
 
 use App\Http\Controllers\Admin\OrderController as AdminOrderController;
 use App\Http\Controllers\App\OrderController as AppOrderController;
-use App\Http\Controllers\App\OrderDetailController as AppOrderDetailController;
-use App\Http\Controllers\Admin\OrderDetailController as AdminOrderDetailController;
+use App\Http\Controllers\App\OrderItemController as AppOrderItemController;
+use App\Http\Controllers\Admin\OrderItemController as AdminOrderItemController;
 use App\Http\Controllers\App\EmployeeController as AppEmployeeController;
 use App\Http\Controllers\Admin\EmployeeController as AdminEmployeeController;
 use App\Http\Controllers\App\OfficeController as AppOfficeController;
@@ -84,8 +84,8 @@ Route::group(['middleware' => ['access.auth', 'auth:sanctum']], function() {
 
 
     // Order Details
-    Route::get('/app/order-details', [AppOrderDetailController::class, 'index']);
-    Route::get('/app/order-details/{orderDetail}', [AppOrderDetailController::class, 'view']);
+    Route::get('/app/order-items', [AppOrderItemController::class, 'index']);
+    Route::get('/app/order-items/{orderItem}', [AppOrderItemController::class, 'view']);
 
     // Customers
     Route::get('/app/customers/{customer}', [AppCustomerController::class, 'view']);
@@ -122,8 +122,8 @@ Route::group(['middleware' => ['access.auth', 'auth:sanctum', 'ensure.employee']
     Route::get('/admin/orders/{order}', [AdminOrderController::class, 'view']);
 
     // Order Details
-    Route::get('/admin/order-details', [AdminOrderDetailController::class, 'index']);
-    Route::get('/admin/order-details/{orderDetail}', [AdminOrderDetailController::class, 'view']);
+    Route::get('/admin/order-items', [AdminOrderItemController::class, 'index']);
+    Route::get('/admin/order-items/{orderItem}', [AdminOrderItemController::class, 'view']);
 
     // Payments
     Route::get('/admin/payments', [AdminPaymentController::class, 'index']);

@@ -4,31 +4,31 @@ namespace App\Http\Controllers\app;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\OrderDetail;
+use App\Models\OrderItem;
 use App\Traits\ResponseTrait;
 
 
-class OrderDetailController extends Controller
+class OrderItemController extends Controller
 {
     use ResponseTrait;
 
     public function index()
     {
         try {
-            $orderItems['orderItems'] = OrderDetail::all();
+            $orderItems['orderItems'] = OrderItem::all();
             return $this->formatResponse(true, $orderItems);
         } catch (\Exception $e) {
             return $this->formatResponse(false, $e->getMessage());
         }
     }
 
-    public function view(OrderDetail $orderDetail)
+    public function view(OrderItem $orderItem)
     {
         try {
-            $orderDetail->load('order');
-            $orderDetail->load('product');
+            $orderItem->load('order');
+            $orderItem->load('product');
 
-            return $this->formatResponse(true, $orderDetail);
+            return $this->formatResponse(true, $orderItem);
         } catch (\Exception $e) {
             return $this->formatResponse(false, $e->getMessage());
         }

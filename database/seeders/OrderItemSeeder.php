@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\OrderDetail;
+use App\Models\OrderItem;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Product;
@@ -3015,9 +3015,9 @@ class OrderItemSeeder extends Seeder
             ['order_id' => 10425, 'product_id' => 'S50_1392', 'quantity_ordered' => 18, 'price_each' => '94.92', 'order_line_number' => 2]
         ];
 
-        foreach($orderItems as $orderDetail) {
-            if(Product::where('id', '=', $orderDetail['product_id'])->exists()) {
-                OrderDetail::insert($orderDetail);
+        foreach($orderItems as $orderItem) {
+            if(Product::where('id', '=', $orderItem['product_id'])->exists()) {
+                OrderItem::insert($orderItem);
             }
         }
     }

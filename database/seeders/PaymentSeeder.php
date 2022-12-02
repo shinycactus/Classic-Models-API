@@ -22,8 +22,8 @@ class PaymentSeeder extends Seeder
 
             $amount = 0;
 
-            foreach($order->orderItems as $orderDetail) {
-                $itemTotalPrice = ($orderDetail->price_each * $orderDetail->quantity_ordered);
+            foreach($order->orderItems as $orderItem) {
+                $itemTotalPrice = ($orderItem->price_each * $orderItem->quantity_ordered);
                 $amount += $itemTotalPrice;
             }
 

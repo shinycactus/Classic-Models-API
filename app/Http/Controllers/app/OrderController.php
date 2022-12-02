@@ -5,7 +5,7 @@ namespace App\Http\Controllers\app;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreOrderRequest;
 use App\Models\Order;
-use App\Models\OrderDetail;
+use App\Models\OrderItem;
 use App\Models\Product;
 use App\Traits\ResponseTrait;
 use Illuminate\Http\Request;
@@ -58,9 +58,9 @@ class OrderController extends Controller
             ]);
 
             if ($order) {
-                foreach($orderItems as $orderDetail) {
-                    $orderDetail['order_id'] = $order->id;
-                    OrderDetail::create($orderDetail);
+                foreach($orderItems as $orderItem) {
+                    $orderItem['order_id'] = $order->id;
+                    OrderItem::create($orderItem);
                 }
             }
 
@@ -82,14 +82,14 @@ class OrderController extends Controller
                 throw new HttpResponseException($this->formatResponse(false, $error));
             }
 
-            $orderDetail = [
+            $orderItem = [
                 'product_id' => $item['product_id'],
                 'quantity_ordered' => $item['quantity_ordered'],
                 'price_each' => $product->msrp,
             ];
 
 
-            array_push($orderItems, $orderDetail);
+            array_push($orderIteItem);
         }
         
         return $orderItems;
