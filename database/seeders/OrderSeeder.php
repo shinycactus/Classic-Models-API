@@ -21,7 +21,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-01-06', 
                 'required_date' => '2003-01-13', 
                 'shipped_date' => '2003-01-10', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 363
             ],
@@ -30,7 +30,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-01-09', 
                 'required_date' => '2003-01-18', 
                 'shipped_date' => '2003-01-11', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'Check on availability.', 
                 'customer_id' => 128
@@ -40,7 +40,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-01-10', 
                 'required_date' => '2003-01-18', 
                 'shipped_date' => '2003-01-14', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 181
             ],
@@ -49,7 +49,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-01-29', 
                 'required_date' => '2003-02-07', 
                 'shipped_date' => '2003-02-02', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 121
             ],
@@ -58,7 +58,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-01-31', 
                 'required_date' => '2003-02-09', 
                 'shipped_date' => '2003-02-01', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 141
             ],
@@ -67,7 +67,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-02-11', 
                 'required_date' => '2003-02-21', 
                 'shipped_date' => '2003-02-12', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 145
             ],
@@ -76,7 +76,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-02-17', 
                 'required_date' => '2003-02-24', 
                 'shipped_date' => '2003-02-21', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 278
             ],
@@ -85,7 +85,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-02-24', 
                 'required_date' => '2003-03-03', 
                 'shipped_date' => '2003-02-26', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'Difficult to negotiate with customer. We need more marketing materials', 
                 'customer_id' => 131
@@ -95,7 +95,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-03-03', 
                 'required_date' => '2003-03-12', 
                 'shipped_date' => '2003-03-08', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 385
             ],
@@ -104,7 +104,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-03-10', 
                 'required_date' => '2003-03-19', 
                 'shipped_date' => '2003-03-11', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'Customer requested that FedEx Ground is used for this shipping', 
                 'customer_id' => 486
@@ -114,7 +114,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-03-18', 
                 'required_date' => '2003-03-24', 
                 'shipped_date' => '2003-03-20', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 187
             ],
@@ -123,7 +123,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-03-25', 
                 'required_date' => '2003-03-31', 
                 'shipped_date' => '2003-03-30', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 129
             ],
@@ -132,7 +132,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-03-24', 
                 'required_date' => '2003-04-03', 
                 'shipped_date' => '2003-03-29', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'Customer requested that ad materials (such as posters, pamphlets) be included in the shippment', 
                 'customer_id' => 144
@@ -142,7 +142,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-03-26', 
                 'required_date' => '2003-04-02', 
                 'shipped_date' => '2003-03-27', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 124
             ],
@@ -151,7 +151,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-04-01', 
                 'required_date' => '2003-04-07', 
                 'shipped_date' => '2003-04-02', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 172
             ],
@@ -160,7 +160,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-04-04', 
                 'required_date' => '2003-04-12', 
                 'shipped_date' => '2003-04-07', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 424
             ],
@@ -169,7 +169,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-04-11', 
                 'required_date' => '2003-04-19', 
                 'shipped_date' => '2003-04-13', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 381
             ],
@@ -178,7 +178,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-04-16', 
                 'required_date' => '2003-04-24', 
                 'shipped_date' => '2003-04-17', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 148
             ],
@@ -187,7 +187,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-04-21', 
                 'required_date' => '2003-04-29', 
                 'shipped_date' => '2003-04-26', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'Customer has worked with some of our vendors in the past and is aware of their MSRP', 
                 'customer_id' => 216
@@ -197,7 +197,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-04-28', 
                 'required_date' => '2003-05-05', 
                 'shipped_date' => '2003-05-02', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 382
             ],
@@ -206,7 +206,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-04-29', 
                 'required_date' => '2003-05-08', 
                 'shipped_date' => '2003-05-01', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 114
             ],
@@ -215,7 +215,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-05-07', 
                 'required_date' => '2003-05-13', 
                 'shipped_date' => '2003-05-13', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 353
             ],
@@ -224,7 +224,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-05-08', 
                 'required_date' => '2003-05-16', 
                 'shipped_date' => '2003-05-13', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 350
             ],
@@ -233,7 +233,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-05-20', 
                 'required_date' => '2003-05-29', 
                 'shipped_date' => '2003-05-22', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 103
             ],
@@ -242,7 +242,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-05-21', 
                 'required_date' => '2003-05-29', 
                 'shipped_date' => '2003-05-25', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'Customer very concerned about the exact color of the models. There is high risk that he may dispute the order because there is a slight color mismatch', 
                 'customer_id' => 112
@@ -252,7 +252,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-05-21', 
                 'required_date' => '2003-05-27', 
                 'shipped_date' => '2003-05-24', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 114
             ],
@@ -261,7 +261,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-05-28', 
                 'required_date' => '2003-06-07', 
                 'shipped_date' => '2003-06-02', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 458
             ],
@@ -270,7 +270,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-06-03', 
                 'required_date' => '2003-06-09', 
                 'shipped_date' => '2003-06-06', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'Customer requested special shippment. The instructions were passed along to the warehouse', 
                 'customer_id' => 151
@@ -280,7 +280,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-06-06', 
                 'required_date' => '2003-06-12', 
                 'shipped_date' => '2003-06-11', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 141
             ],
@@ -289,7 +289,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-06-12', 
                 'required_date' => '2003-06-18', 
                 'shipped_date' => '2003-06-14', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 324
             ],
@@ -298,7 +298,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-06-16', 
                 'required_date' => '2003-06-24', 
                 'shipped_date' => '2003-06-21', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 198
             ],
@@ -307,7 +307,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-06-16', 
                 'required_date' => '2003-06-25', 
                 'shipped_date' => '2003-06-21', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 447
             ],
@@ -316,7 +316,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-06-25', 
                 'required_date' => '2003-07-01', 
                 'shipped_date' => '2003-06-28', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 323
             ],
@@ -325,7 +325,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-06-27', 
                 'required_date' => '2003-07-04', 
                 'shipped_date' => '2003-07-03', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 141
             ],
@@ -334,7 +334,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-07-01', 
                 'required_date' => '2003-07-10', 
                 'shipped_date' => '2003-07-05', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 250
             ],
@@ -343,7 +343,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-07-02', 
                 'required_date' => '2003-07-12', 
                 'shipped_date' => '2003-07-03', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 124
             ],
@@ -352,7 +352,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-07-04', 
                 'required_date' => '2003-07-14', 
                 'shipped_date' => '2003-07-06', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'Customer is interested in buying more Ferrari models', 
                 'customer_id' => 242
@@ -362,7 +362,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-07-10', 
                 'required_date' => '2003-07-20', 
                 'shipped_date' => '2003-07-14', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 353
             ],
@@ -371,7 +371,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-07-07', 
                 'required_date' => '2003-07-16', 
                 'shipped_date' => '2003-07-13', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 496
             ],
@@ -380,7 +380,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-07-16', 
                 'required_date' => '2003-07-23', 
                 'shipped_date' => '2003-07-21', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 282
             ],
@@ -389,7 +389,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-07-24', 
                 'required_date' => '2003-08-02', 
                 'shipped_date' => '2003-07-30', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 161
             ],
@@ -398,7 +398,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-08-01', 
                 'required_date' => '2003-08-09', 
                 'shipped_date' => '2003-08-04', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 334
             ],
@@ -407,7 +407,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-08-08', 
                 'required_date' => '2003-08-16', 
                 'shipped_date' => '2003-08-13', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 124
             ],
@@ -416,7 +416,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-08-10', 
                 'required_date' => '2003-08-18', 
                 'shipped_date' => '2003-08-12', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'Can we deliver the new Ford Mustang models by end-of-quarter?', 
                 'customer_id' => 320
@@ -426,7 +426,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-08-13', 
                 'required_date' => '2003-08-21', 
                 'shipped_date' => '2003-08-14', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 381
             ],
@@ -435,7 +435,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-08-25', 
                 'required_date' => '2003-09-02', 
                 'shipped_date' => '2003-08-31', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 205
             ],
@@ -444,7 +444,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-09-03', 
                 'required_date' => '2003-09-13', 
                 'shipped_date' => '2003-09-06', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 447
             ],
@@ -453,7 +453,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-09-05', 
                 'required_date' => '2003-09-12', 
                 'shipped_date' => '2003-09-09', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 379
             ],
@@ -462,7 +462,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-09-11', 
                 'required_date' => '2003-09-21', 
                 'shipped_date' => '2003-09-15', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'They want to reevaluate their terms agreement with Finance.', 
                 'customer_id' => 276
@@ -472,7 +472,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-09-12', 
                 'required_date' => '2003-09-18', 
                 'shipped_date' => '2003-09-17', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 487
             ],
@@ -481,7 +481,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-09-19', 
                 'required_date' => '2003-09-27', 
                 'shipped_date' => '2003-09-21', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'They want to reevaluate their terms agreement with Finance.', 
                 'customer_id' => 148
@@ -491,7 +491,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-09-21', 
                 'required_date' => '2003-09-30', 
                 'shipped_date' => '2003-09-24', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 311
             ],
@@ -500,7 +500,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-09-25', 
                 'required_date' => '2003-10-03', 
                 'shipped_date' => '2003-10-01', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 333
             ],
@@ -509,7 +509,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-09-28', 
                 'required_date' => '2003-10-05', 
                 'shipped_date' => '2003-10-03', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 141
             ],
@@ -518,7 +518,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-10-02', 
                 'required_date' => '2003-10-12', 
                 'shipped_date' => '2003-10-08', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 219
             ],
@@ -527,7 +527,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-10-06', 
                 'required_date' => '2003-10-13', 
                 'shipped_date' => '2003-10-07', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 186
             ],
@@ -536,7 +536,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-10-08', 
                 'required_date' => '2003-10-17', 
                 'shipped_date' => '2003-10-11', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 141
             ],
@@ -545,7 +545,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-10-09', 
                 'required_date' => '2003-10-15', 
                 'shipped_date' => '2003-10-14', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 473
             ],
@@ -554,7 +554,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-10-10', 
                 'required_date' => '2003-10-18', 
                 'shipped_date' => '2003-10-15', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 121
             ],
@@ -563,7 +563,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-10-10', 
                 'required_date' => '2003-10-19', 
                 'shipped_date' => '2003-10-16', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 321
             ],
@@ -572,7 +572,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-10-11', 
                 'required_date' => '2003-10-17', 
                 'shipped_date' => '2003-10-17', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 347
             ],
@@ -581,7 +581,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-10-17', 
                 'required_date' => '2003-10-25', 
                 'shipped_date' => '2003-10-20', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 227
             ],
@@ -590,7 +590,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-10-18', 
                 'required_date' => '2003-10-26', 
                 'shipped_date' => '2003-10-19', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 321
             ],
@@ -599,7 +599,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-10-20', 
                 'required_date' => '2003-10-27', 
                 'shipped_date' => '2003-10-24', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 424
             ],
@@ -618,7 +618,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-10-22', 
                 'required_date' => '2003-10-31', 
                 'shipped_date' => '2003-12-26', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'This order was on hold because customers\'s credit limit had been exceeded. Order will ship when payment is received', 
                 'customer_id' => 148
@@ -628,7 +628,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-10-21', 
                 'required_date' => '2003-10-30', 
                 'shipped_date' => '2003-10-27', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 462
             ],
@@ -637,7 +637,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-10-23', 
                 'required_date' => '2003-10-30',
                 'shipped_date' => NULL,
-                'status' => 'Cancelled', 
+                'status' => 3, 
                 
                 'comments' => 'Customer called to cancel. The warehouse was notified in time and the order didn\'t ship. They have a new VP of Sales and are shifting their sales model. Our VP of Sales should contact them.', 
                 'customer_id' => 448
@@ -647,7 +647,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-10-28', 
                 'required_date' => '2003-11-03', 
                 'shipped_date' => '2003-11-01', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 161
             ],
@@ -656,7 +656,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-04', 
                 'required_date' => '2003-11-14', 
                 'shipped_date' => '2003-11-09', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 276
             ],
@@ -665,7 +665,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-04', 
                 'required_date' => '2003-11-12', 
                 'shipped_date' => '2003-11-07', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 452
             ],
@@ -674,7 +674,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-05', 
                 'required_date' => '2003-11-13', 
                 'shipped_date' => '2003-11-07', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 233
             ],
@@ -683,7 +683,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-05', 
                 'required_date' => '2003-11-14', 
                 'shipped_date' => '2003-11-11', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 175
             ],
@@ -692,7 +692,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-05', 
                 'required_date' => '2003-11-15', 
                 'shipped_date' => '2003-11-09', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'Cautious optimism. We have happy customers here, if we can keep them well stocked.  I need all the information I can get on the planned shippments of Porches', 
                 'customer_id' => 278
@@ -702,7 +702,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-06', 
                 'required_date' => '2003-11-15', 
                 'shipped_date' => '2003-11-10', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 333
             ],
@@ -711,7 +711,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-06', 
                 'required_date' => '2003-11-14', 
                 'shipped_date' => '2003-11-09', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 324
             ],
@@ -720,7 +720,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-06', 
                 'required_date' => '2003-11-15', 
                 'shipped_date' => '2003-11-12', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 386
             ],
@@ -729,7 +729,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-07', 
                 'required_date' => '2003-11-17', 
                 'shipped_date' => '2003-11-12', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 344
             ],
@@ -738,7 +738,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-08', 
                 'required_date' => '2003-11-16', 
                 'shipped_date' => '2003-11-10', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'Custom shipping instructions sent to warehouse', 
                 'customer_id' => 242
@@ -748,7 +748,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-11', 
                 'required_date' => '2003-11-17', 
                 'shipped_date' => '2003-11-13', 
-                'status' => 'Cancelled',
+                'status' => 3,
                 
                 'comments' => 'Customer cancelled due to urgent budgeting issues. Must be cautious when dealing with them in the future. Since order shipped already we must discuss who would cover the shipping charges.', 
                 'customer_id' => 496
@@ -758,7 +758,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-11', 
                 'required_date' => '2003-11-19', 
                 'shipped_date' => '2003-11-14', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 171
             ],
@@ -767,7 +767,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-12', 
                 'required_date' => '2003-11-19', 
                 'shipped_date' => '2003-11-15', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 167
             ],
@@ -776,7 +776,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-12', 
                 'required_date' => '2003-11-21', 
                 'shipped_date' => '2003-11-18', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 124
             ],
@@ -785,7 +785,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-13', 
                 'required_date' => '2003-11-22', 
                 'shipped_date' => '2003-11-15', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'We need to keep in close contact with their Marketing VP. He is the decision maker for all their purchases.', 
                 'customer_id' => 339
@@ -795,7 +795,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-14', 
                 'required_date' => '2003-11-22', 
                 'shipped_date' => '2003-11-20', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 484
             ],
@@ -804,7 +804,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-14', 
                 'required_date' => '2003-11-21', 
                 'shipped_date' => '2003-11-20', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 320
             ],
@@ -813,7 +813,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-14', 
                 'required_date' => '2003-11-20', 
                 'shipped_date' => '2003-11-18', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'They want to reevaluate their terms agreement with the VP of Sales', 
                 'customer_id' => 489
@@ -823,7 +823,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-15', 
                 'required_date' => '2003-11-24', 
                 'shipped_date' => '2003-11-16', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 211
             ],
@@ -832,7 +832,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-18', 
                 'required_date' => '2003-11-26', 
                 'shipped_date' => '2003-11-24', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 167
             ],
@@ -841,7 +841,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-18', 
                 'required_date' => '2003-11-25', 
                 'shipped_date' => '2003-11-24', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'They want to reevaluate their terms agreement with Finance.', 
                 'customer_id' => 205
@@ -851,7 +851,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-19', 
                 'required_date' => '2003-11-29', 
                 'shipped_date' => '2003-11-20', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 141
             ],
@@ -860,7 +860,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-20', 
                 'required_date' => '2003-11-30', 
                 'shipped_date' => '2003-11-24', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'We must be cautions with this customer. Their VP of Sales resigned. Company may be heading down.', 
                 'customer_id' => 259
@@ -870,7 +870,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-20', 
                 'required_date' => '2003-11-29', 
                 'shipped_date' => '2003-11-25', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 363
             ],
@@ -879,7 +879,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-21', 
                 'required_date' => '2003-11-28', 
                 'shipped_date' => '2003-11-27', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 471
             ],
@@ -888,7 +888,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-25', 
                 'required_date' => '2003-12-02', 
                 'shipped_date' => '2003-11-26', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 146
             ],
@@ -897,7 +897,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-25', 
                 'required_date' => '2003-12-01', 
                 'shipped_date' => '2003-11-28', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 319
             ],
@@ -906,7 +906,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-26', 
                 'required_date' => '2003-12-03', 
                 'shipped_date' => '2003-12-01', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 455
             ],
@@ -915,7 +915,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-26', 
                 'required_date' => '2003-12-02', 
                 'shipped_date' => '2003-12-01', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'Customer inquired about remote controlled models and gold models.', 
                 'customer_id' => 216
@@ -925,7 +925,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-11-27', 
                 'required_date' => '2003-12-06', 
                 'shipped_date' => '2003-12-03', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 385
             ],
@@ -934,7 +934,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-12-01', 
                 'required_date' => '2003-12-10', 
                 'shipped_date' => '2003-12-06', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 475
             ],
@@ -943,7 +943,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-12-01', 
                 'required_date' => '2003-12-09', 
                 'shipped_date' => '2003-12-06', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 211
             ],
@@ -952,7 +952,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-12-01', 
                 'required_date' => '2003-12-11', 
                 'shipped_date' => '2003-12-02', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 129
             ],
@@ -961,7 +961,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-12-02', 
                 'required_date' => '2003-12-09', 
                 'shipped_date' => '2003-12-06', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 357
             ],
@@ -970,7 +970,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-12-02', 
                 'required_date' => '2003-12-11', 
                 'shipped_date' => '2003-12-07', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 141
             ],
@@ -979,7 +979,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-12-02', 
                 'required_date' => '2003-12-10', 
                 'shipped_date' => '2003-12-04', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 151
             ],
@@ -988,7 +988,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-12-03', 
                 'required_date' => '2003-12-09', 
                 'shipped_date' => '2003-12-07', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => ' I need all the information I can get on our competitors.', 
                 'customer_id' => 141
@@ -998,7 +998,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-12-05', 
                 'required_date' => '2003-12-13', 
                 'shipped_date' => '2003-12-08', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'Can we renegotiate this one?', 
                 'customer_id' => 202
@@ -1008,7 +1008,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-12-09', 
                 'required_date' => '2003-12-17', 
                 'shipped_date' => '2003-12-11', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'Check on availability.', 
                 'customer_id' => 495
@@ -1018,7 +1018,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-01-02', 
                 'required_date' => '2004-01-11', 
                 'shipped_date' => '2004-01-04', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 146
             ],
@@ -1027,7 +1027,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-01-09', 
                 'required_date' => '2004-01-15', 
                 'shipped_date' => '2004-01-12', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 347
             ],
@@ -1036,7 +1036,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-01-12', 
                 'required_date' => '2004-01-22', 
                 'shipped_date' => '2004-01-20', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 177
             ],
@@ -1045,7 +1045,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-01-15', 
                 'required_date' => '2004-01-25', 
                 'shipped_date' => '2004-01-18', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 406
             ],
@@ -1054,7 +1054,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-01-16', 
                 'required_date' => '2004-01-24', 
                 'shipped_date' => '2004-01-18', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 141
             ],
@@ -1063,7 +1063,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-01-22', 
                 'required_date' => '2004-01-28', 
                 'shipped_date' => '2004-01-27', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'Difficult to negotiate with customer. We need more marketing materials', 
                 'customer_id' => 489
@@ -1073,7 +1073,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-01-26', 
                 'required_date' => '2004-02-04', 
                 'shipped_date' => '2004-01-29', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 458
             ],
@@ -1082,7 +1082,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-01-29', 
                 'required_date' => '2004-02-08', 
                 'shipped_date' => '2004-02-01', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'Customer requested that FedEx Ground is used for this shipping', 
                 'customer_id' => 475
@@ -1092,7 +1092,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-02-02', 
                 'required_date' => '2004-02-10', 
                 'shipped_date' => '2004-02-04', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 256
             ],
@@ -1101,7 +1101,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-02-04', 
                 'required_date' => '2004-02-14', 
                 'shipped_date' => '2004-02-06', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 166
             ],
@@ -1110,7 +1110,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-02-09', 
                 'required_date' => '2004-02-16', 
                 'shipped_date' => '2004-02-11', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'Customer requested that ad materials (such as posters, pamphlets) be included in the shippment', 
                 'customer_id' => 473
@@ -1120,7 +1120,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-02-10', 
                 'required_date' => '2004-02-17', 
                 'shipped_date' => '2004-02-12', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 487
             ],
@@ -1129,7 +1129,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-02-12', 
                 'required_date' => '2004-02-19', 
                 'shipped_date' => '2004-02-16', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 189
             ],
@@ -1138,7 +1138,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-02-18', 
                 'required_date' => '2004-02-26', 
                 'shipped_date' => '2004-02-19', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 314
             ],
@@ -1147,7 +1147,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-02-19', 
                 'required_date' => '2004-02-27', 
                 'shipped_date' => '2004-02-20', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 239
             ],
@@ -1156,7 +1156,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-02-20', 
                 'required_date' => '2004-02-29', 
                 'shipped_date' => '2004-02-24', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 114
             ],
@@ -1165,7 +1165,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-02-21', 
                 'required_date' => '2004-03-02', 
                 'shipped_date' => '2004-02-26', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'Customer has worked with some of our vendors in the past and is aware of their MSRP', 
                 'customer_id' => 171
@@ -1175,7 +1175,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-02-22', 
                 'required_date' => '2004-03-01', 
                 'shipped_date' => '2004-02-24', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 298
             ],
@@ -1184,7 +1184,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-02-26', 
                 'required_date' => '2004-03-06', 
                 'shipped_date' => '2004-03-02', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 239
             ],
@@ -1193,7 +1193,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-03-02', 
                 'required_date' => '2004-03-12', 
                 'shipped_date' => '2004-03-08', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 146
             ],
@@ -1202,7 +1202,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-03-10', 
                 'required_date' => '2004-03-18', 
                 'shipped_date' => '2004-03-13', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 173
             ],
@@ -1211,7 +1211,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-03-11', 
                 'required_date' => '2004-03-20', 
                 'shipped_date' => '2004-03-12', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 124
             ],
@@ -1220,7 +1220,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-03-15', 
                 'required_date' => '2004-03-24', 
                 'shipped_date' => '2004-03-20', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'Customer very concerned about the exact color of the models. There is high risk that he may dispute the order because there is a slight color mismatch', 
                 'customer_id' => 128
@@ -1230,7 +1230,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-03-19', 
                 'required_date' => '2004-03-26', 
                 'shipped_date' => '2004-03-25', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 344
             ],
@@ -1239,7 +1239,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-03-20', 
                 'required_date' => '2004-03-30', 
                 'shipped_date' => '2004-03-25', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 240
             ],
@@ -1248,7 +1248,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-03-29', 
                 'required_date' => '2004-04-04', 
                 'shipped_date' => '2004-04-02', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'Customer requested special shippment. The instructions were passed along to the warehouse', 
                 'customer_id' => 328
@@ -1258,7 +1258,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-03-30', 
                 'required_date' => '2004-04-05', 
                 'shipped_date' => '2004-04-02', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 412
             ],
@@ -1267,7 +1267,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-04-02', 
                 'required_date' => '2004-04-12', 
                 'shipped_date' => '2004-04-06', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 260
             ],
@@ -1276,7 +1276,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-04-03', 
                 'required_date' => '2004-04-11', 
                 'shipped_date' => '2004-04-08', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 486
             ],
@@ -1285,7 +1285,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-04-05', 
                 'required_date' => '2004-04-12', 
                 'shipped_date' => '2004-04-10', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 181
             ],
@@ -1294,7 +1294,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-04-09', 
                 'required_date' => '2004-04-16', 
                 'shipped_date' => '2004-04-10', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 145
             ],
@@ -1303,7 +1303,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-04-12', 
                 'required_date' => '2004-04-21', 
                 'shipped_date' => '2004-04-17', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 311
             ],
@@ -1312,7 +1312,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-04-13', 
                 'required_date' => '2004-04-20', 
                 'shipped_date' => '2004-04-20', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 177
             ],
@@ -1321,7 +1321,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-04-13', 
                 'required_date' => '2004-04-20', 
                 'shipped_date' => '2004-04-19', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 209
             ],
@@ -1330,7 +1330,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-04-20', 
                 'required_date' => '2004-04-28', 
                 'shipped_date' => '2004-04-25', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'Customer is interested in buying more Ferrari models', 
                 'customer_id' => 456
@@ -1340,7 +1340,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-04-26', 
                 'required_date' => '2004-05-03', 
                 'shipped_date' => '2004-04-28', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 495
             ],
@@ -1349,7 +1349,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-04-29', 
                 'required_date' => '2004-05-09', 
                 'shipped_date' => '2004-05-04', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 141
             ],
@@ -1358,7 +1358,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-05-04', 
                 'required_date' => '2004-05-12', 
                 'shipped_date' => '2004-05-09', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 455
             ],
@@ -1367,7 +1367,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-05-05', 
                 'required_date' => '2004-05-13', 
                 'shipped_date' => '2004-05-06', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 141
             ],
@@ -1376,7 +1376,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-05-05', 
                 'required_date' => '2004-05-11', 
                 'shipped_date' => '2004-05-08', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 334
             ],
@@ -1385,7 +1385,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-05-07', 
                 'required_date' => '2004-05-14',
                 'shipped_date' => NULL,
-                'status' => 'Cancelled', 
+                'status' => 3, 
                 'comments' => 'Order was mistakenly placed. The warehouse noticed the lack of documentation.', 
                 'customer_id' => 131
             ],
@@ -1394,7 +1394,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-05-08', 
                 'required_date' => '2004-05-17', 
                 'shipped_date' => '2004-05-11', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'Can we deliver the new Ford Mustang models by end-of-quarter?', 
                 'customer_id' => 173
@@ -1404,7 +1404,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-05-11', 
                 'required_date' => '2004-05-19', 
                 'shipped_date' => '2004-05-15', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 450
             ],
@@ -1413,7 +1413,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-05-18', 
                 'required_date' => '2004-05-24', 
                 'shipped_date' => '2004-05-24', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 328
             ],
@@ -1422,7 +1422,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-05-26', 
                 'required_date' => '2004-06-04', 
                 'shipped_date' => '2004-05-29', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 406
             ],
@@ -1431,7 +1431,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-06-01', 
                 'required_date' => '2004-06-09', 
                 'shipped_date' => '2004-06-02', 
-                'status' => 'Cancelled',
+                'status' => 3,
                 
                 'comments' => 'Customer disputed the order and we agreed to cancel it. We must be more cautions with this customer going forward, since they are very hard to please. We must cover the shipping fees.', 
                 'customer_id' => 201
@@ -1441,7 +1441,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-06-03', 
                 'required_date' => '2004-06-13', 
                 'shipped_date' => '2004-06-04', 
-                'status' => 'Shipped',
+                'status' => 2,
                 
                 'comments' => 'Customer requested that DHL is used for this shipping', 
                 'customer_id' => 323
@@ -1451,7 +1451,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-06-04', 
                 'required_date' => '2004-06-12', 
                 'shipped_date' => '2004-06-09', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 209
             ],
@@ -1460,7 +1460,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-06-08', 
                 'required_date' => '2004-06-16', 
                 'shipped_date' => '2004-06-10', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 145
             ],
@@ -1469,7 +1469,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-06-14', 
                 'required_date' => '2004-06-24', 
                 'shipped_date' => '2004-06-15', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 450
             ],
@@ -1478,7 +1478,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-06-15', 
                 'required_date' => '2004-06-25', 
                 'shipped_date' => '2004-06-23', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 398
             ],
@@ -1487,7 +1487,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-06-15', 
                 'required_date' => '2004-06-22', 
                 'shipped_date' => '2004-06-17', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 166
             ],
@@ -1496,7 +1496,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-06-16', 
                 'required_date' => '2004-06-22',
                 'shipped_date' => NULL,
-                'status' => 'Cancelled', 
+                'status' => 3, 
                 'comments' => 'Customer heard complaints from their customers and called to cancel this order. Will notify the Sales Manager.', 
                 'customer_id' => 357
             ],
@@ -1505,7 +1505,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-06-17', 
                 'required_date' => '2004-06-25', 
                 'shipped_date' => '2004-06-22', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 233
             ],
@@ -1514,7 +1514,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-06-24', 
                 'required_date' => '2004-07-01',
                 'shipped_date' => NULL,
-                'status' => 'Cancelled', 
+                'status' => 3, 
                 'comments' => 'This customer found a better offer from one of our competitors. Will call back to renegotiate.', 
                 'customer_id' => 141
             ],
@@ -1523,7 +1523,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-06-28', 
                 'required_date' => '2004-07-04', 
                 'shipped_date' => '2004-07-02', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 175
             ],
@@ -1532,7 +1532,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-06-30', 
                 'required_date' => '2004-07-06', 
                 'shipped_date' => '2004-07-01', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'Customer will send a truck to our local warehouse on 7/1/2004', 
                 'customer_id' => 362
             ],
@@ -1541,7 +1541,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-07-02', 
                 'required_date' => '2004-07-09', 
                 'shipped_date' => '2004-07-07', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 471
             ],
@@ -1550,7 +1550,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-07-06', 
                 'required_date' => '2004-07-14', 
                 'shipped_date' => '2004-07-10', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 386
             ],
@@ -1559,7 +1559,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-07-07', 
                 'required_date' => '2004-07-17', 
                 'shipped_date' => '2004-07-09', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 151
             ],
@@ -1568,7 +1568,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-07-12', 
                 'required_date' => '2004-07-18', 
                 'shipped_date' => '2004-07-14', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 412
             ],
@@ -1577,7 +1577,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-07-16', 
                 'required_date' => '2004-07-22', 
                 'shipped_date' => '2004-07-18', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 382
             ],
@@ -1586,7 +1586,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-07-19', 
                 'required_date' => '2004-07-27', 
                 'shipped_date' => '2004-07-24', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'Can we renegotiate this one?', 
                 'customer_id' => 282
             ],
@@ -1595,7 +1595,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-07-20', 
                 'required_date' => '2004-07-29', 
                 'shipped_date' => '2004-07-23', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 124
             ],
@@ -1604,7 +1604,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-07-20', 
                 'required_date' => '2004-07-26', 
                 'shipped_date' => '2004-07-22', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 157
             ],
@@ -1613,7 +1613,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-07-21', 
                 'required_date' => '2004-07-28', 
                 'shipped_date' => '2004-07-22', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 314
             ],
@@ -1622,7 +1622,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-07-21', 
                 'required_date' => '2004-07-29', 
                 'shipped_date' => '2004-07-22', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 379
             ],
@@ -1631,7 +1631,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-07-23', 
                 'required_date' => '2004-08-02', 
                 'shipped_date' => '2004-07-29', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 119
             ],
@@ -1640,7 +1640,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-08-02', 
                 'required_date' => '2004-08-11', 
                 'shipped_date' => '2004-08-08', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 204
             ],
@@ -1649,7 +1649,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-08-04', 
                 'required_date' => '2004-08-12', 
                 'shipped_date' => '2004-08-05', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 148
             ],
@@ -1658,7 +1658,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-08-06', 
                 'required_date' => '2004-08-16', 
                 'shipped_date' => '2004-08-09', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 112
             ],
@@ -1667,7 +1667,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-08-09', 
                 'required_date' => '2004-08-19', 
                 'shipped_date' => '2004-08-15', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'Cautious optimism. We have happy customers here, if we can keep them well stocked.  I need all the information I can get on the planned shippments of Porches', 
                 'customer_id' => 141
             ],
@@ -1676,7 +1676,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-08-17', 
                 'required_date' => '2004-08-27', 
                 'shipped_date' => '2004-08-19', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 249
             ],
@@ -1685,7 +1685,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-08-19', 
                 'required_date' => '2004-08-28', 
                 'shipped_date' => '2004-08-23', 
-                'status' => 'Shipped', 
+                'status' => 2, 
                 'comments' => NULL, 
                 'customer_id' => 157
             ],
@@ -1694,7 +1694,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-08-20', 
                 'required_date' => '2004-08-26', 
                 'shipped_date' => '2004-08-22', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 124
             ],
@@ -1703,7 +1703,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-08-20', 
                 'required_date' => '2004-08-30', 
                 'shipped_date' => '2004-08-23', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 260
             ],
@@ -1712,7 +1712,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-08-21', 
                 'required_date' => '2004-08-29', 
                 'shipped_date' => '2004-08-26', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'Custom shipping instructions sent to warehouse', 
                 'customer_id' => 299
             ],
@@ -1721,7 +1721,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-08-27', 
                 'required_date' => '2004-09-04', 
                 'shipped_date' => '2004-08-31', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 286
             ],
@@ -1730,7 +1730,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-08-28', 
                 'required_date' => '2004-09-06', 
                 'shipped_date' => '2004-09-01', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 172
             ],
@@ -1739,7 +1739,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-08-30', 
                 'required_date' => '2004-09-06', 
                 'shipped_date' => '2004-09-01', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 298
             ],
@@ -1748,7 +1748,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-09-01', 
                 'required_date' => '2004-09-11', 
                 'shipped_date' => '2004-09-05', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 166
             ],
@@ -1757,7 +1757,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-09-03', 
                 'required_date' => '2004-09-13', 
                 'shipped_date' => '2004-09-04', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'We need to keep in close contact with their Marketing VP. He is the decision maker for all their purchases.', 
                 'customer_id' => 167
             ],
@@ -1766,7 +1766,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-09-07', 
                 'required_date' => '2004-09-15', 
                 'shipped_date' => '2004-09-13', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 198
             ],
@@ -1775,7 +1775,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-09-08', 
                 'required_date' => '2004-09-17', 
                 'shipped_date' => '2004-09-14', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 448
             ],
@@ -1784,7 +1784,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-09-08', 
                 'required_date' => '2004-09-18', 
                 'shipped_date' => '2004-09-11', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'They want to reevaluate their terms agreement with Finance.', 
                 'customer_id' => 131
             ],
@@ -1793,7 +1793,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-09-09', 
                 'required_date' => '2004-09-18', 
                 'shipped_date' => '2004-09-14', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 249
             ],
@@ -1802,7 +1802,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-09-10', 
                 'required_date' => '2004-09-17', 
                 'shipped_date' => '2004-09-14', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 204
             ],
@@ -1811,7 +1811,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-09-10', 
                 'required_date' => '2004-09-17', 
                 'shipped_date' => '2004-09-14', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'They want to reevaluate their terms agreement with Finance.', 
                 'customer_id' => 362
             ],
@@ -1820,7 +1820,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-09-15', 
                 'required_date' => '2004-09-22', 
                 'shipped_date' => '2004-09-16', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 415
             ],
@@ -1829,7 +1829,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-09-16', 
                 'required_date' => '2004-09-22', 
                 'shipped_date' => '2004-09-21', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'We must be cautions with this customer. Their VP of Sales resigned. Company may be heading down.', 
                 'customer_id' => 189
             ],
@@ -1838,7 +1838,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-09-27', 
                 'required_date' => '2004-10-05', 
                 'shipped_date' => '2004-10-01', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 103
             ],
@@ -1847,7 +1847,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-09-30', 
                 'required_date' => '2004-10-10', 
                 'shipped_date' => '2004-10-01', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 186
             ],
@@ -1856,7 +1856,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-10-04', 
                 'required_date' => '2003-10-13', 
                 'shipped_date' => '2003-10-09', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 128
             ],
@@ -1865,7 +1865,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-10-05', 
                 'required_date' => '2003-10-15', 
                 'shipped_date' => '2003-10-08', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 299
             ],
@@ -1874,7 +1874,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2003-10-06', 
                 'required_date' => '2003-10-16', 
                 'shipped_date' => '2003-10-07', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 201
             ],
@@ -1883,7 +1883,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-10-06', 
                 'required_date' => '2004-10-14', 
                 'shipped_date' => '2004-10-09', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'Customer inquired about remote controlled models and gold models.', 
                 'customer_id' => 484
             ],
@@ -1892,7 +1892,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-10-11', 
                 'required_date' => '2004-10-20', 
                 'shipped_date' => '2004-10-17', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 256
             ],
@@ -1901,7 +1901,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-10-13', 
                 'required_date' => '2004-10-22', 
                 'shipped_date' => '2004-10-15', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'Check on availability.', 
                 'customer_id' => 286
             ],
@@ -1910,7 +1910,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-10-14', 
                 'required_date' => '2004-10-21', 
                 'shipped_date' => '2004-10-17', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 187
             ],
@@ -1919,7 +1919,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-10-14', 
                 'required_date' => '2004-10-23', 
                 'shipped_date' => '2004-10-20', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 339
             ],
@@ -1928,7 +1928,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-10-15', 
                 'required_date' => '2004-10-24', 
                 'shipped_date' => '2004-10-20', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'Customer requested that FedEx Ground is used for this shipping', 
                 'customer_id' => 319
             ],
@@ -1937,7 +1937,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-10-15', 
                 'required_date' => '2004-10-24', 
                 'shipped_date' => '2004-10-18', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 121
             ],
@@ -1946,7 +1946,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-10-16', 
                 'required_date' => '2004-10-24', 
                 'shipped_date' => '2004-10-18', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 259
             ],
@@ -1955,7 +1955,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-10-16', 
                 'required_date' => '2004-10-23', 
                 'shipped_date' => '2004-10-20', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'Difficult to negotiate with customer. We need more marketing materials', 
                 'customer_id' => 141
             ],
@@ -1964,7 +1964,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-10-21', 
                 'required_date' => '2004-10-27', 
                 'shipped_date' => '2004-10-23', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 124
             ],
@@ -1973,7 +1973,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-10-22', 
                 'required_date' => '2004-10-28', 
                 'shipped_date' => '2004-10-25', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'Customer requested that FedEx Ground is used for this shipping', 
                 'customer_id' => 202
             ],
@@ -1982,7 +1982,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-10-22', 
                 'required_date' => '2004-11-01', 
                 'shipped_date' => '2004-10-23', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 227
             ],
@@ -1991,7 +1991,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-10-29', 
                 'required_date' => '2004-11-08', 
                 'shipped_date' => '2004-10-30', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 119
             ],
@@ -2000,7 +2000,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-01', 
                 'required_date' => '2004-11-09', 
                 'shipped_date' => '2004-11-07', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'Customer requested that ad materials (such as posters, pamphlets) be included in the shippment', 
                 'customer_id' => 240
             ],
@@ -2009,7 +2009,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-02', 
                 'required_date' => '2004-11-12', 
                 'shipped_date' => '2004-11-08', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 161
             ],
@@ -2018,7 +2018,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-02', 
                 'required_date' => '2004-11-09', 
                 'shipped_date' => '2004-11-07', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 157
             ],
@@ -2027,7 +2027,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-03', 
                 'required_date' => '2004-11-11', 
                 'shipped_date' => '2004-11-06', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'Customer requested that DHL is used for this shipping', 
                 'customer_id' => 456
             ],
@@ -2036,7 +2036,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-03', 
                 'required_date' => '2004-11-13', 
                 'shipped_date' => '2004-11-07', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 144
             ],
@@ -2045,7 +2045,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-04', 
                 'required_date' => '2004-11-12', 
                 'shipped_date' => '2004-11-07', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 462
             ],
@@ -2054,7 +2054,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-04', 
                 'required_date' => '2004-11-12', 
                 'shipped_date' => '2004-11-10', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'Customer has worked with some of our vendors in the past and is aware of their MSRP', 
                 'customer_id' => 363
             ],
@@ -2063,7 +2063,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-05', 
                 'required_date' => '2004-11-12', 
                 'shipped_date' => '2004-11-09', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 128
             ],
@@ -2072,7 +2072,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-05', 
                 'required_date' => '2004-11-11', 
                 'shipped_date' => '2004-11-08', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 181
             ],
@@ -2081,7 +2081,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-05', 
                 'required_date' => '2004-11-13', 
                 'shipped_date' => '2004-11-08', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 121
             ],
@@ -2090,7 +2090,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-09', 
                 'required_date' => '2004-11-16', 
                 'shipped_date' => '2004-11-10', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 144
             ],
@@ -2108,7 +2108,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-12', 
                 'required_date' => '2004-11-21', 
                 'shipped_date' => '2004-11-18', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'Customer very concerned about the exact color of the models. There is high risk that he may dispute the order because there is a slight color mismatch', 
                 'customer_id' => 278
             ],
@@ -2117,7 +2117,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-15', 
                 'required_date' => '2004-11-24', 
                 'shipped_date' => '2004-11-16', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 131
             ],
@@ -2126,7 +2126,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-16', 
                 'required_date' => '2004-11-25', 
                 'shipped_date' => '2004-11-21', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 385
             ],
@@ -2135,7 +2135,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-17', 
                 'required_date' => '2004-11-23', 
                 'shipped_date' => '2004-11-23', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'Customer requested special shippment. The instructions were passed along to the warehouse', 
                 'customer_id' => 486
             ],
@@ -2144,7 +2144,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-17', 
                 'required_date' => '2004-11-25', 
                 'shipped_date' => '2004-11-18', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 187
             ],
@@ -2153,7 +2153,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-18', 
                 'required_date' => '2004-11-27', 
                 'shipped_date' => '2004-11-20', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 129
             ],
@@ -2162,7 +2162,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-19', 
                 'required_date' => '2004-11-28',
                 'shipped_date' => NULL,
-                'status' => 'On Hold',
+                'status' => 4,
                 'comments' => 'The outstaniding balance for this customer exceeds their credit limit. Order will be shipped when a payment is received.', 
                 'customer_id' => 144
             ],
@@ -2171,7 +2171,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-19', 
                 'required_date' => '2004-11-29', 
                 'shipped_date' => '2004-11-23', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 124
             ],
@@ -2180,7 +2180,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-20', 
                 'required_date' => '2004-11-26', 
                 'shipped_date' => '2004-11-24', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'Customer requested that DHL is used for this shipping', 
                 'customer_id' => 172
             ],
@@ -2189,7 +2189,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-21', 
                 'required_date' => '2004-11-30', 
                 'shipped_date' => '2004-11-26', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 424
             ],
@@ -2198,7 +2198,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-22', 
                 'required_date' => '2004-12-02', 
                 'shipped_date' => '2004-11-27', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 381
             ],
@@ -2207,7 +2207,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-23', 
                 'required_date' => '2004-11-30', 
                 'shipped_date' => '2004-11-30', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 398
             ],
@@ -2216,7 +2216,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-24', 
                 'required_date' => '2004-12-01', 
                 'shipped_date' => '2004-11-25', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'Customer is interested in buying more Ferrari models', 
                 'customer_id' => 216
             ],
@@ -2225,7 +2225,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-24', 
                 'required_date' => '2004-12-01', 
                 'shipped_date' => '2004-11-29', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 382
             ],
@@ -2234,7 +2234,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-24', 
                 'required_date' => '2004-12-01', 
                 'shipped_date' => '2004-11-29', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 114
             ],
@@ -2243,7 +2243,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-24', 
                 'required_date' => '2004-12-01', 
                 'shipped_date' => '2004-11-26', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 353
             ],
@@ -2252,7 +2252,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-25', 
                 'required_date' => '2004-12-02', 
                 'shipped_date' => '2004-11-29', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 350
             ],
@@ -2261,7 +2261,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-25', 
                 'required_date' => '2004-12-01', 
                 'shipped_date' => '2004-11-26', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 103
             ],
@@ -2270,7 +2270,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-29', 
                 'required_date' => '2004-12-05', 
                 'shipped_date' => '2004-11-30', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 112
             ],
@@ -2279,7 +2279,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-29', 
                 'required_date' => '2004-12-07', 
                 'shipped_date' => '2004-11-30', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'Can we deliver the new Ford Mustang models by end-of-quarter?', 
                 'customer_id' => 114
             ],
@@ -2288,7 +2288,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-11-01', 
                 'required_date' => '2004-11-08', 
                 'shipped_date' => '2004-11-05', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 458
             ],
@@ -2297,7 +2297,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-12-01', 
                 'required_date' => '2004-12-07', 
                 'shipped_date' => '2004-12-03', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 151
             ],
@@ -2306,7 +2306,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-12-02', 
                 'required_date' => '2004-12-08', 
                 'shipped_date' => '2004-12-05', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 141
             ],
@@ -2315,7 +2315,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-12-03', 
                 'required_date' => '2004-12-11', 
                 'shipped_date' => '2004-12-07', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 324
             ],
@@ -2324,7 +2324,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-12-03', 
                 'required_date' => '2004-12-12', 
                 'shipped_date' => '2004-12-09', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 198
             ],
@@ -2333,7 +2333,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-12-04', 
                 'required_date' => '2004-12-11', 
                 'shipped_date' => '2004-12-05', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 447
             ],
@@ -2342,7 +2342,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-12-04', 
                 'required_date' => '2004-12-10', 
                 'shipped_date' => '2004-12-05', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 323
             ],
@@ -2351,7 +2351,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-12-07', 
                 'required_date' => '2004-12-14', 
                 'shipped_date' => '2004-12-13', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 141
             ],
@@ -2360,7 +2360,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-12-09', 
                 'required_date' => '2004-12-15', 
                 'shipped_date' => '2004-12-12', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 250
             ],
@@ -2369,7 +2369,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-12-10', 
                 'required_date' => '2004-12-16', 
                 'shipped_date' => '2004-12-14', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 124
             ],
@@ -2378,7 +2378,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-12-10', 
                 'required_date' => '2004-12-16', 
                 'shipped_date' => '2004-12-16', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'Customer requested that DHL is used for this shipping', 
                 'customer_id' => 141
             ],
@@ -2387,7 +2387,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-12-15', 
                 'required_date' => '2004-12-23', 
                 'shipped_date' => '2004-12-18', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 353
             ],
@@ -2396,7 +2396,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-12-16', 
                 'required_date' => '2004-12-22', 
                 'shipped_date' => '2004-12-18', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 496
             ],
@@ -2405,7 +2405,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2004-12-17', 
                 'required_date' => '2004-12-24', 
                 'shipped_date' => '2004-12-20', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 282
             ],
@@ -2414,7 +2414,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-01-05', 
                 'required_date' => '2005-01-16', 
                 'shipped_date' => '2005-01-10', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 161
             ],
@@ -2423,7 +2423,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-01-06', 
                 'required_date' => '2005-01-12', 
                 'shipped_date' => '2005-01-10', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 334
             ],
@@ -2432,7 +2432,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-01-06', 
                 'required_date' => '2005-01-17', 
                 'shipped_date' => '2005-01-09', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 350
             ],
@@ -2441,7 +2441,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-01-07', 
                 'required_date' => '2005-01-18', 
                 'shipped_date' => '2005-01-11', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 320
             ],
@@ -2450,7 +2450,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-01-10', 
                 'required_date' => '2005-01-19', 
                 'shipped_date' => '2005-01-12', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 381
             ],
@@ -2468,7 +2468,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-01-19', 
                 'required_date' => '2005-01-27', 
                 'shipped_date' => '2005-01-24', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'Can we renegotiate this one?', 
                 'customer_id' => 124
             ],
@@ -2477,7 +2477,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-01-20', 
                 'required_date' => '2005-01-28', 
                 'shipped_date' => '2005-01-24', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 379
             ],
@@ -2486,7 +2486,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-01-20', 
                 'required_date' => '2005-02-01', 
                 'shipped_date' => '2005-01-25', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 276
             ],
@@ -2495,7 +2495,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-01-23', 
                 'required_date' => '2005-02-03', 
                 'shipped_date' => '2005-01-25', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 124
             ],
@@ -2504,7 +2504,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-01-26', 
                 'required_date' => '2005-02-05', 
                 'shipped_date' => '2005-01-28', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 398
             ],
@@ -2513,7 +2513,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-01-31', 
                 'required_date' => '2005-02-08', 
                 'shipped_date' => '2005-02-06', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 311
             ],
@@ -2522,7 +2522,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-02-02', 
                 'required_date' => '2005-02-09', 
                 'shipped_date' => '2005-02-03', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 333
             ],
@@ -2531,7 +2531,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-02-03', 
                 'required_date' => '2005-02-10', 
                 'shipped_date' => '2005-02-06', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 119
             ],
@@ -2540,7 +2540,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-02-08', 
                 'required_date' => '2005-02-18', 
                 'shipped_date' => '2005-02-13', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 219
             ],
@@ -2549,7 +2549,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-02-09', 
                 'required_date' => '2005-02-21', 
                 'shipped_date' => '2005-02-12', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'Cautious optimism. We have happy customers here, if we can keep them well stocked.  I need all the information I can get on the planned shippments of Porches', 
                 'customer_id' => 186
             ],
@@ -2558,7 +2558,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-02-10', 
                 'required_date' => '2005-02-18', 
                 'shipped_date' => '2005-02-11', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 141
             ],
@@ -2567,7 +2567,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-02-10', 
                 'required_date' => '2005-02-18', 
                 'shipped_date' => '2005-02-11', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 141
             ],
@@ -2576,7 +2576,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-02-16', 
                 'required_date' => '2005-02-24', 
                 'shipped_date' => '2005-02-18', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 141
             ],
@@ -2585,7 +2585,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-02-17', 
                 'required_date' => '2005-02-25', 
                 'shipped_date' => '2005-02-18', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 321
             ],
@@ -2594,7 +2594,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-02-17', 
                 'required_date' => '2005-02-23', 
                 'shipped_date' => '2005-02-18', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'Custom shipping instructions sent to warehouse', 
                 'customer_id' => 124
             ],
@@ -2603,7 +2603,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-02-22', 
                 'required_date' => '2005-03-02', 
                 'shipped_date' => '2005-02-25', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 141
             ],
@@ -2612,7 +2612,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-02-23', 
                 'required_date' => '2005-03-06', 
                 'shipped_date' => '2005-02-27', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 321
             ],
@@ -2621,7 +2621,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-02-28', 
                 'required_date' => '2005-03-09', 
                 'shipped_date' => '2005-03-01', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 124
             ],
@@ -2639,7 +2639,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-03-02', 
                 'required_date' => '2005-03-09', 
                 'shipped_date' => '2005-03-06', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'We need to keep in close contact with their Marketing VP. He is the decision maker for all their purchases.', 
                 'customer_id' => 148
             ],
@@ -2648,7 +2648,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-03-03', 
                 'required_date' => '2005-03-11', 
                 'shipped_date' => '2005-03-09', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 462
             ],
@@ -2657,7 +2657,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-03-03', 
                 'required_date' => '2005-03-09', 
                 'shipped_date' => '2005-03-08', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 448
             ],
@@ -2666,7 +2666,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-03-04', 
                 'required_date' => '2005-03-11', 
                 'shipped_date' => '2005-03-07', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'They want to reevaluate their terms agreement with Finance.', 
                 'customer_id' => 124
             ],
@@ -2675,7 +2675,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-03-09', 
                 'required_date' => '2005-03-20', 
                 'shipped_date' => '2005-03-15', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 276
             ],
@@ -2684,7 +2684,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-03-10', 
                 'required_date' => '2005-03-18', 
                 'shipped_date' => '2005-03-12', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 452
             ],
@@ -2693,7 +2693,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-03-11', 
                 'required_date' => '2005-03-22', 
                 'shipped_date' => '2005-03-14', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'They want to reevaluate their terms agreement with Finance.', 
                 'customer_id' => 323
             ],
@@ -2702,7 +2702,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-03-15', 
                 'required_date' => '2005-03-25', 
                 'shipped_date' => '2005-03-19', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 141
             ],
@@ -2711,7 +2711,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-03-17', 
                 'required_date' => '2005-03-24', 
                 'shipped_date' => '2005-03-23', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'We must be cautions with this customer. Their VP of Sales resigned. Company may be heading down.', 
                 'customer_id' => 250
             ],
@@ -2720,7 +2720,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-03-23', 
                 'required_date' => '2005-04-02', 
                 'shipped_date' => '2005-03-28', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 124
             ],
@@ -2729,7 +2729,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-03-28', 
                 'required_date' => '2005-04-09', 
                 'shipped_date' => '2005-04-01', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 242
             ],
@@ -2738,7 +2738,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-03-30', 
                 'required_date' => '2005-04-09', 
                 'shipped_date' => '2005-03-31', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 353
             ],
@@ -2747,7 +2747,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-04-01', 
                 'required_date' => '2005-04-12', 
                 'shipped_date' => '2005-04-03', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 496
             ],
@@ -2756,7 +2756,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-04-01', 
                 'required_date' => '2005-04-11', 
                 'shipped_date' => '2005-04-04', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'Customer requested that DHL is used for this shipping', 
                 'customer_id' => 450
             ],
@@ -2765,7 +2765,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-04-03', 
                 'required_date' => '2005-04-14',
                 'shipped_date' => NULL,
-                'status' => 'On Hold',
+                'status' => 4,
                 'comments' => 'Customer credit limit exceeded. Will ship when a payment is received.', 
                 'customer_id' => 328
             ],
@@ -2774,7 +2774,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-04-07', 
                 'required_date' => '2005-04-14', 
                 'shipped_date' => '2005-04-12', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 406
             ],
@@ -2783,7 +2783,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-04-08', 
                 'required_date' => '2005-04-18', 
                 'shipped_date' => '2005-04-11', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 201
             ],
@@ -2792,7 +2792,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-04-08', 
                 'required_date' => '2005-04-14', 
                 'shipped_date' => '2005-04-11', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 323
             ],
@@ -2801,7 +2801,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-04-14', 
                 'required_date' => '2005-04-24', 
                 'shipped_date' => '2005-04-20', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 209
             ],
@@ -2819,7 +2819,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-04-22', 
                 'required_date' => '2005-05-04',
                 'shipped_date' => NULL,
-                'status' => 'On Hold',
+                'status' => 4,
                 'comments' => 'Customer credit limit exceeded. Will ship when a payment is received.', 
                 'customer_id' => 450
             ],
@@ -2828,7 +2828,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-04-22', 
                 'required_date' => '2005-04-29', 
                 'shipped_date' => '2005-04-27', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 398
             ],
@@ -2837,7 +2837,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-04-23', 
                 'required_date' => '2005-05-05', 
                 'shipped_date' => '2005-04-24', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 166
             ],
@@ -2846,7 +2846,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-04-29', 
                 'required_date' => '2005-05-10', 
                 'shipped_date' => '2005-04-30', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 357
             ],
@@ -2855,7 +2855,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-05-01', 
                 'required_date' => '2005-05-08', 
                 'shipped_date' => '2005-05-06', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 233
             ],
@@ -2864,7 +2864,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-05-03', 
                 'required_date' => '2005-05-13', 
                 'shipped_date' => '2005-05-05', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 141
             ],
@@ -2873,7 +2873,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-05-05', 
                 'required_date' => '2005-05-14', 
                 'shipped_date' => '2005-05-09', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => 'Customer requested that DHL is used for this shipping', 
                 'customer_id' => 175
             ],
@@ -2882,7 +2882,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-05-06', 
                 'required_date' => '2005-05-13',
                 'shipped_date' => NULL,
-                'status' => 'On Hold', 
+                'status' => 4, 
                 'comments' => 'Customer credit limit exceeded. Will ship when a payment is received.', 
                 'customer_id' => 362
             ],
@@ -2891,7 +2891,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-05-09', 
                 'required_date' => '2005-05-20', 
                 'shipped_date' => '2005-05-12', 
-                'status' => 'Disputed',
+                'status' => 5,
                 'comments' => 'Customer claims the scales of the models don\'t match what was discussed. I keep all the paperwork though to prove otherwise', 
                 'customer_id' => 471
             ],
@@ -2900,7 +2900,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-05-10', 
                 'required_date' => '2005-05-16', 
                 'shipped_date' => '2005-05-14', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 386
             ],
@@ -2918,7 +2918,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-05-16', 
                 'required_date' => '2005-05-24', 
                 'shipped_date' => '2005-05-20', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 412
             ],
@@ -2927,7 +2927,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-05-17', 
                 'required_date' => '2005-05-28', 
                 'shipped_date' => '2005-05-19', 
-                'status' => 'Shipped',
+                'status' => 2,
                 'comments' => NULL, 
                 'customer_id' => 382
             ],
@@ -2936,7 +2936,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-05-29', 
                 'required_date' => '2005-06-07' ,
                 'shipped_date' => NULL,
-                'status' => 'In Process', 
+                'status' => 1, 
                 'comments' => NULL, 
                 'customer_id' => 282
             ],
@@ -2945,7 +2945,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-05-29', 
                 'required_date' => '2005-06-06',
                 'shipped_date' => NULL,
-                'status' => 'In Process',
+                'status' => 1,
                 'comments' => 'Custom shipping instructions were sent to warehouse', 
                 'customer_id' => 124
             ],
@@ -2954,7 +2954,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-05-30', 
                 'required_date' => '2005-06-11',
                 'shipped_date' => NULL,
-                'status' => 'In Process',
+                'status' => 1,
                 'comments' => NULL, 
                 'customer_id' => 157
             ],
@@ -2963,7 +2963,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-05-30', 
                 'required_date' => '2005-06-05',
                 'shipped_date' => NULL,
-                'status' => 'In Process', 
+                'status' => 1, 
                 'comments' => NULL, 
                 'customer_id' => 314
             ],
@@ -2972,7 +2972,7 @@ class OrderSeeder extends Seeder
                 'order_date' => '2005-05-31', 
                 'required_date' => '2005-06-08',
                 'shipped_date' => NULL,
-                'status' => 'In Process',
+                'status' => 1,
                 'comments' => NULL, 
                 'customer_id' => 141
             ],
